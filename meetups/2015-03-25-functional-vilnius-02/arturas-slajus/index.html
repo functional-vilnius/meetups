@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html class="sl-root decks show mz-applicationcache mz-history mz-localstorage mz-svg mz-opacity mz-rgba mz-backgroundsize mz-cssanimations mz-csstransforms mz-csstransforms3d mz-csstransitions mz-flexbox mz-flexboxlegacy mz-fullscreen loaded ua-linux reveal-is-ready wf-montserrat-n4-active wf-active fonts-are-ready" data-account="free"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script async="" src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/cbgapi.loaded_1"></script><script async="" src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/cbgapi.loaded_0"></script><script gapi_processed="true" src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/plusone.js" async="" type="text/javascript"></script><script src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/widgets.js" id="twitter-wjs"></script><script src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/all.js" id="facebook-jssdk"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4fd2e9786b","applicationID":"1563900","transactionName":"cApZREQKWl9XFxZQVlAORB9FDVlE","queueTime":0,"applicationTime":27,"agent":"js-agent.newrelic.com/nr-632.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o?o:n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({QJf3ax:[function(e,n){function t(e){function n(n,t,a){e&&e(n,t,a),a||(a={});for(var u=c(n),f=u.length,s=i(a,o,r),p=0;f>p;p++)u[p].apply(s,t);return s}function a(e,n){f[e]=c(e).concat(n)}function c(e){return f[e]||[]}function u(){return t(n)}var f={};return{on:a,emit:n,create:u,listeners:c,_events:f}}function r(){return{}}var o="nr@context",i=e("gos");n.exports=t()},{gos:"7eSDFh"}],ee:[function(e,n){n.exports=e("QJf3ax")},{}],3:[function(e,n){function t(e){return function(){r(e,[(new Date).getTime()].concat(i(arguments)))}}var r=e("handle"),o=e(1),i=e(2);"undefined"==typeof window.newrelic&&(newrelic=window.NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit","noticeError"];o(a,function(e,n){window.NREUM[n]=t("api-"+n)}),n.exports=window.NREUM},{1:12,2:13,handle:"D5DuLP"}],"7eSDFh":[function(e,n){function t(e,n,t){if(r.call(e,n))return e[n];var o=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return e[n]=o,o}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],gos:[function(e,n){n.exports=e("7eSDFh")},{}],handle:[function(e,n){n.exports=e("D5DuLP")},{}],D5DuLP:[function(e,n){function t(e,n,t){return r.listeners(e).length?r.emit(e,n,t):(o[e]||(o[e]=[]),void o[e].push(n))}var r=e("ee").create(),o={};n.exports=t,t.ee=r,r.q=o},{ee:"QJf3ax"}],id:[function(e,n){n.exports=e("XL7HBI")},{}],XL7HBI:[function(e,n){function t(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:i(e,o,function(){return r++})}var r=1,o="nr@id",i=e("gos");n.exports=t},{gos:"7eSDFh"}],G9z0Bl:[function(e,n){function t(){var e=d.info=NREUM.info,n=f.getElementsByTagName("script")[0];if(e&&e.licenseKey&&e.applicationID&&n){c(p,function(n,t){n in e||(e[n]=t)});var t="https"===s.split(":")[0]||e.sslForHttp;d.proto=t?"https://":"http://",a("mark",["onload",i()]);var r=f.createElement("script");r.src=d.proto+e.agent,n.parentNode.insertBefore(r,n)}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=e("handle"),c=e(1),u=(e(2),window),f=u.document,s=(""+location).split("?")[0],p={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-632.min.js"},d=n.exports={offset:i(),origin:s,features:{}};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),u.addEventListener("load",t,!1)):(f.attachEvent("onreadystatechange",r),u.attachEvent("onload",t)),a("mark",["firstbyte",i()])},{1:12,2:3,handle:"D5DuLP"}],loader:[function(e,n){n.exports=e("G9z0Bl")},{}],12:[function(e,n){function t(e,n){var t=[],o="",i=0;for(o in e)r.call(e,o)&&(t[i]=n(o,e[o]),i+=1);return t}var r=Object.prototype.hasOwnProperty;n.exports=t},{}],13:[function(e,n){function t(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(0>o?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=t},{}]},{},["G9z0Bl"]);</script>
+
+    <title>Quest for composable immutable objects (in Scala) by Artūras Šlajus</title>
+    <meta name="description" content="A presentation created with Slides.">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta property="og:title" content="Quest for composable immutable objects (in Scala) by Artūras Šlajus">
+    <meta property="og:site_name" content="Slides">
+    <meta property="og:image" content="https://s3.amazonaws.com/media-p.slid.es/thumbnails/secure/fa75c3/decks.jpg">
+    <meta property="og:type" content="presentation">
+    <meta property="og:url" content="http://slides.com/arturasslajus/quest-for-composable-immutable-objects">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <link href="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/css.css" rel="stylesheet" type="text/css" data-application-font="opensans">
+
+    <link href="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/slides-0c1388bc8e6e9cabec475ce55e102391.css" media="all" rel="stylesheet">
+    <link href="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/application-9448ded63c1a58640fd7f262152895c9.css" media="all" rel="stylesheet">
+    	<link href="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/deck-v2-acdc209c6344f19ea7a94d786b4bbf71.css" media="all" rel="stylesheet">
+
+
+<style id="user-css-output" type="text/css"></style>
+
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="/X7qoNSqE6fkjq97DJQ0WT4xTe4uWt4xtVJf8W3wJPg=" name="csrf-token">
+    <script type="text/javascript">
+  if( !/dnt=1/.test( window.location.search ) ) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-39670045-1', 'auto');
+    ga('send', 'pageview');
+
+  }
+</script>
+    <!--[if lt IE 9]>
+    <script src="//assets.slid.es/assets/html5shiv-b51d49ab0e89834a02ffce4a59905afb.js"></script>
+<![endif]-->
+    	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@SlidesApp">
+	<meta name="twitter:title" content="Quest for composable immutable objects (in Scala)">
+	<meta name="twitter:description" content="An interactive presentation created with Slides.">
+	<meta name="twitter:image" content="https://s3.amazonaws.com/media-p.slid.es/thumbnails/secure/fa75c3/decks.jpg">
+
+  <link href="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/montserrat.css" rel="stylesheet"><style type="text/css"></style><style>a, button, .sl-select, .sl-checkbox label, .radio label { outline: none !important; }</style><script src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/embed.js" async="" type="text/javascript"></script></head>
+  <body data-twttr-rendered="true">
+    
+    <div id="container" class="container">
+      
+      
+      <div id="main" class="main" role="main">
+        
+
+
+
+
+<div class="marquee">
+
+	<div class="reveal-frame">
+		<div class="reveal-viewport theme-font-montserrat theme-color-black-blue">
+			<div data-background-transition="slide" data-transition-speed="default" role="application" class="reveal slide">
+				<div style="width: 960px; height: 700px;" class="slides">
+					<section style="display: block;" class="present" data-id="7ce856ae71a00e2c97764283ee4c4c7a"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 253px; height: auto;" data-block-id="e1c3428c322704951558633f32b0163c"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>Quest for composable immutable objects</h1>
+
+<p>(in Scala 2.11.5)</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="8b8cb0c72566e3d51674ba1cb5f0221f" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 360px; top: 521px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align: right;"><strong>Artūras Šlajus</strong></p>
+
+<p style="text-align: right;">&nbsp;</p>
+
+<p style="color: rgb(255, 255, 255); text-align: right;">arturas@tinylabproductions.com</p>
+
+<p style="color: rgb(255, 255, 255); text-align: right;">@arturaz_</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="a2bddec755969e289bdd5bcfedde3a31" style="min-width: 30px; min-height: 30px; width: 960px; height: 229.44px; left: 0px; top: 0px;"><div class="sl-block-content" style="z-index: 13;"><img src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/tlp_logo_with_text3_.jpg" style="visibility: visible;" data-natural-width="1000" data-natural-height="239"></div></div></section><section aria-hidden="true" data-previous-indexv="0" style="display: block;" class="stack future" data-id="868af44c4acce4a41d337c4142eb650a" hidden=""><section aria-hidden="true" style="display: block;" class="past" data-id="40f4e19cb66b07513a2ffc8a1d7bc334" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="f0805cc22dd8b9be16dd86e06f190475"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Problem statement</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 261px; height: auto;" data-block-id="71255a04db98566e7ffb260cbfe7069f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<p><span style="font-size:32px">Problem domain: turn based strategy game world</span></p>
+
+<p style="text-align:left">&nbsp;</p>
+
+<ul>
+	<li><span style="font-size:32px">Allow composing objects from parts.</span></li>
+	<li><span style="font-size:32px">Encode properties of world&nbsp;objects statically.</span></li>
+	<li><span style="font-size:32px">Allow putting objects into performant collections. (no HLists!)</span></li>
+</ul>
+</div></div></section><section aria-hidden="true" style="display: block;" class="" data-id="e80e540b08c304b89e2aab52590cbc40"><div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 7px; height: auto;" data-block-id="29334a4822b6a5d2079e99d9fc727fe7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Simplified domain</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="eabbdc1aac9b91780e9af3962c312593" style="min-width: 30px; min-height: 30px; width: 637.352517985612px; height: 560px; left: 163px; top: 112px;"><div class="sl-block-content" style="z-index: 12;"><img src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/Screenshot_from_2015-02-22_12_23_36.png" data-natural-width="791" data-natural-height="695" style="visibility: visible;"></div></div></section></section><section aria-hidden="true" data-previous-indexv="0" style="display: block;" class="stack future" data-id="e5b72fae690202038a9e8b0f11d35b6a" hidden=""><section aria-hidden="true" class="past" style="display: none;" data-id="35d7c0a1c93ef4188efab00d19cba21c" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 313px; height: auto;" data-block-id="34b1040370192956c059860a49da388e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>S#0: Mutability</h2>
+</div></div>
+</section><section aria-hidden="true" style="display: none;" class="past" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="c5d603c39cff1b0cb1d9a162467d04fd"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>World object trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 490px; left: 80px; top: 140px;" data-block-id="e5604cb36b3efe8daadd8d0ab1e3467e"><div class="sl-block-content" style="z-index: 12; font-size: 157%; border-width: 1px;"><pre class="scala"><code class=" hljs "><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vect2</span>(</span>x: <span class="hljs-type">Int</span>, y: <span class="hljs-type">Int</span>)
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">id</span> =</span> <span class="hljs-type">UUID</span>.randomUUID()
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">position</span> =</span> _position
+  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">var</span> _position: <span class="hljs-type">Vect2</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hp</span> =</span> _hp
+  <span class="hljs-keyword">protected</span> <span class="hljs-keyword">var</span> _hp: <span class="hljs-type">Int</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">takeDamage</span>(</span>damage: <span class="hljs-type">Int</span>): <span class="hljs-type">Unit</span> = {
+    _hp = (hp - damage) max <span class="hljs-number">0</span>
+  }
+}</code></pre></div></div></section><section aria-hidden="true" style="display: none;" class="past" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="3638fc7963ff4a7245c8a1f089948b49"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Movable trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 385px; left: 80px; top: 228px;" data-block-id="26eb8987a0f21fe27e0ecc6bfb6f5cea"><div class="sl-block-content" style="z-index: 12; font-size: 147%; border-width: 1px;"><pre class="scala"><code class=" hljs "><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Movable</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moved</span> =</span> _moved
+  <span class="hljs-keyword">private</span>[<span class="hljs-keyword">this</span>] <span class="hljs-keyword">var</span> _moved = <span class="hljs-literal">false</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveTo</span>(</span>pos: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Unit</span> =
+    <span class="hljs-keyword">if</span> (moved) <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-type">IllegalStateException</span>(
+      <span class="hljs-string">"Already moved this turn!"</span>
+    )
+    <span class="hljs-keyword">else</span> {
+      _moved = <span class="hljs-literal">true</span>
+      _position = pos
+    }
+}</code></pre></div></div></section><section aria-hidden="true" style="display: none;" class="past" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="4d3a09d6ef5e81094a8d0e0140c33702"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Fighter trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 420px; left: 80px; top: 140px;" data-block-id="ae5a345971109227dd22fd3863163958"><div class="sl-block-content" style="z-index: 12; font-size: 138%; border-width: 1px;"><pre class="scala"><code class=" hljs "><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Fighter</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hasAttacked</span> =</span> _hasAttacked
+  <span class="hljs-keyword">private</span>[<span class="hljs-keyword">this</span>] <span class="hljs-keyword">var</span> _hasAttacked = <span class="hljs-literal">false</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">attack</span>(</span>target: <span class="hljs-type">WObject</span>, damage: <span class="hljs-type">Int</span>): <span class="hljs-type">Unit</span> = {
+    <span class="hljs-keyword">if</span> (hasAttacked)
+      <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-type">IllegalStateException</span>(
+        <span class="hljs-string">"Already attacked this turn!"</span>
+      )
+    <span class="hljs-keyword">else</span> {
+      _hasAttacked = <span class="hljs-literal">true</span>
+      target.takeDamage(damage)
+    }
+  }
+}</code></pre></div></div></section><section aria-hidden="true" style="display: block;" class=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="69341ec15ea709ff651d1ca5a77f959e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Defining objects</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 459px; left: 80px; top: 191px;" data-block-id="e170b430e8194567e53cf5a50331faee"><div class="sl-block-content" style="z-index: 12; font-size: 135%; border-width: 1px;"><pre class="scala"><code class=" hljs "><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rock</span>(</span><span class="hljs-keyword">var</span> _position: <span class="hljs-type">Vect2</span>, <span class="hljs-keyword">var</span> _hp: <span class="hljs-type">Int</span>)
+  <span class="hljs-keyword">extends</span> <span class="hljs-type">WObject</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scout</span>(</span><span class="hljs-keyword">var</span> _position: <span class="hljs-type">Vect2</span>, <span class="hljs-keyword">var</span> _hp: <span class="hljs-type">Int</span>)
+  <span class="hljs-keyword">extends</span> <span class="hljs-type">Movable</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Gunship</span>(</span><span class="hljs-keyword">var</span> _position: <span class="hljs-type">Vect2</span>, <span class="hljs-keyword">var</span> _hp: <span class="hljs-type">Int</span>)
+  <span class="hljs-keyword">extends</span> <span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LaserTower</span>(</span><span class="hljs-keyword">var</span> _position: <span class="hljs-type">Vect2</span>, <span class="hljs-keyword">var</span> _hp: <span class="hljs-type">Int</span>)
+  <span class="hljs-keyword">extends</span> <span class="hljs-type">Fighter</span>
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">rock</span> =</span> <span class="hljs-keyword">new</span> <span class="hljs-type">Rock</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>), <span class="hljs-number">10</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">scout</span> =</span> <span class="hljs-keyword">new</span> <span class="hljs-type">Scout</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>), <span class="hljs-number">20</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">gunship</span> =</span> <span class="hljs-keyword">new</span> <span class="hljs-type">Gunship</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>), <span class="hljs-number">50</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">laserTower</span> =</span> <span class="hljs-keyword">new</span> <span class="hljs-type">LaserTower</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>), <span class="hljs-number">200</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objects</span> =</span> collection.mutable.<span class="hljs-type">Set</span>(
+  rock, scout, gunship, laserTower
+)</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" hidden=""><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="2a6c86da0913ffd0b6e3966f64c1060e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Operation that needs one trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 231px; left: 80px; top: 235px;" data-block-id="5c70dfcf7e367d490957fd593bc7b732"><div class="sl-block-content" style="z-index: 11; font-size: 150%; border-width: 1px;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span>(</span>from: <span class="hljs-type">Vect2</span>, to: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Boolean</span> = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">if</span> obj.position == from =&gt; obj
+  }
+  objOpt.foreach(_.moveTo(to))
+  objOpt.isDefined
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" hidden=""><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="544410e4973067106f3ae639d2ec6384"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Operation that needs two traits</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 445px; left: 80px; top: 198px;" data-block-id="55e22c8bdca8ae673b3d7cae9c147d49"><div class="sl-block-content" style="z-index: 11; font-size: 159%; border-width: 1px;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveAndAttack</span>(</span>
+  from: <span class="hljs-type">Vect2</span>, target: <span class="hljs-type">WObject</span>, damage: <span class="hljs-type">Int</span>
+): <span class="hljs-type">Boolean</span> = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span> 
+    <span class="hljs-keyword">if</span> obj.position == from =&gt; 
+      obj
+  }
+  objOpt.foreach { obj =&gt;
+    obj.moveTo(target.position)
+    obj.attack(target, damage)
+  }
+  objOpt.isDefined
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="11cfd2f26f7c30994c740b084183b984" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="58ca74bc61dbd938461db91ffa68223c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Mutable approach</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="00b9b514f5919ab4fec8ea52ad3a6cf9" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 0px; top: 140px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h3>Pros</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 480px; top: 140px;" data-block-id="f00afe2bc018d6acc94e1cced032a9a0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h3>Cons</h3>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="aa39be5a295260cecd398b71529144b6" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 0px; top: 210px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<ul>
+	<li>Pretty short.</li>
+	<li>Can combine a lot of traits easily.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 480px; left: 480px; top: 210px;" data-block-id="6c01d49652717024c2544960af7c8815"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;">
+<ul>
+	<li>It is mutable!</li>
+	<li>Uncontrollable side effects.</li>
+	<li>Sneaky exceptions.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="a0fd03e5f1e24121aeeade4d8451aa11" style="min-width: 30px; min-height: 30px; width: 960px; height: 350px; left: 0px; top: 350px;"><div class="sl-block-content fragment" style="z-index: 16; font-size: 131%;" data-fragment-index="0"><pre><code class=" hljs groovy"><span class="hljs-comment">/* What do these methods do? */</span>
+
+<span class="hljs-keyword">def</span> takeDamage(<span class="hljs-string">damage:</span> Int): Unit
+<span class="hljs-keyword">def</span> moveTo(<span class="hljs-string">pos:</span> Vect2): Unit
+<span class="hljs-keyword">def</span> attack(<span class="hljs-string">target:</span> WObject, <span class="hljs-string">damage:</span> Int): Unit
+
+<span class="hljs-comment">/* What happens if I want to return a log of events? */</span>
+
+<span class="hljs-keyword">def</span> takeDamage(<span class="hljs-string">damage:</span> Int): Seq[Event]
+<span class="hljs-keyword">def</span> moveTo(<span class="hljs-string">pos:</span> Vect2): Seq[Event]
+<span class="hljs-keyword">def</span> attack(<span class="hljs-string">target:</span> WObject, <span class="hljs-string">damage:</span> Int): Seq[Event]
+
+<span class="hljs-comment">/* But nobody is listening! */</span></code></pre></div></div></section></section><section data-previous-indexv="0" style="display: none;" aria-hidden="true" class="stack future" data-id="4a012d886b5368cc7050216dbf350134" hidden=""><section style="display: none;" data-id="a00592d65f96d35a082313430ec9d182"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 0px; height: auto;" data-block-id="6762139d96c0dd142d35c2621f591b1d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Purely functional approach</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 101px; height: auto;" data-block-id="0976aa931f1ac15c4aa02b8eccd181b1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>No in-place state mutation.</li>
+	<li>All objects are immutable.</li>
+	<li>All functions are pure.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="code" style="min-width: 30px; min-height: 30px; width: 960px; height: 461px; left: 0px; top: 239px;" data-block-id="5c0b7e142037ae6314cd53d9c7dc2b8e"><div class="sl-block-content fragment" style="z-index: 13; font-size: 154%;" data-fragment-index="0"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">takeDamage</span>(</span>damage: <span class="hljs-type">Int</span>): ???
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveTo</span>(</span>pos: <span class="hljs-type">Vect2</span>): ???
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">attack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span>](target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>)
+  : (???, <span class="hljs-type">Target</span>)
+
+<span class="hljs-comment">/* What happens if I want to return a log of events? */</span>
+
+<span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Evented</span>[</span><span class="hljs-type">A</span>] = (<span class="hljs-type">A</span>, <span class="hljs-type">Seq</span>[<span class="hljs-type">Event</span>])
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">takeDamage</span>(</span>damage: <span class="hljs-type">Int</span>): <span class="hljs-type">Evented</span>[???]
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveTo</span>(</span>pos: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Evented</span>[???]
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">attack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span>](target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>)
+  : <span class="hljs-type">Evented</span>[(???, <span class="hljs-type">Target</span>)]
+
+<span class="hljs-comment">/* Compiler tells us where to fix things. */</span></code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="827cf0aa67377438596db0a92b976a37"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 0px; height: auto;" data-block-id="fab252cdf453f42c9651c3d30be791d0"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Purely functional approach</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 105px; height: auto;" data-block-id="b340582ae87e5c92fdfa151a79099b59"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>The question is: what is ???</p>
+
+<p>&nbsp;</p>
+
+<p>AKA MyType problem</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 490px; height: auto;" data-block-id="49a61f43b3039732073a2746b6d9a782"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Given a trait where some operation must return a new object of the same type, how do we express it?</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="7b42c179e3d5e9e8dfff8f49b9dd1cd7" style="min-width: 30px; min-height: 30px; width: 917px; height: 153px; left: 22px; top: 291px;"><div class="sl-block-content" style="z-index: 14; font-size: 155%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">takeDamage</span>(</span>damage: <span class="hljs-type">Int</span>): ???
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveTo</span>(</span>pos: <span class="hljs-type">Vect2</span>): ???
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">attack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span>](target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>)
+  : (???, <span class="hljs-type">Target</span>)</code></pre></div></div></section></section><section data-previous-indexv="0" style="display: none;" aria-hidden="true" class="stack future" data-id="8021a3ce2a5413ab974ef2031f9b69de" hidden=""><section style="display: none;" data-id="6af4f8f471c1102ac81f01f6fde6899b"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 313px; height: auto;" data-block-id="1fe38488c409125404e1769d10dd1e51"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>S#1: F-Bounded Polymorphism</h2>
+</div></div>
+</section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="3b9e027d1fd2db6b0cabfc4d67511878"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>World Object trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 325px; left: 80px; top: 188px;" data-block-id="74d031c6004fc77221649499dacb5efa"><div class="sl-block-content" style="z-index: 12; font-size: 119%;"><pre class="scala"><code class=" hljs "><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vect2</span>(</span>x: <span class="hljs-type">Int</span>, y: <span class="hljs-type">Int</span>)
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">WObject</span>[</span><span class="hljs-type">Self</span> &lt;: <span class="hljs-type">WObject</span>[<span class="hljs-type">Self</span>]] {
+  <span class="hljs-comment">// Properties could be bundled into objects </span>
+  <span class="hljs-comment">// and manipulated with lenses.</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">id</span>:</span> <span class="hljs-type">UUID</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">position</span>:</span> <span class="hljs-type">Vect2</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hp</span>:</span> <span class="hljs-type">Int</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>): <span class="hljs-type">Self</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">takeDamage</span>(</span>damage: <span class="hljs-type">Int</span>): <span class="hljs-type">Self</span> = withHp((hp - damage) max <span class="hljs-number">0</span>)
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="8380d724b9e8e684a10ee19a7fd83b93"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Movable trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 372px; left: 80px; top: 234px;" data-block-id="b9fafe9254f302301e7fa5e22a90ca02"><div class="sl-block-content" style="z-index: 12; font-size: 129%;"><pre class="scala"><code class=" hljs "><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Movable</span>[</span><span class="hljs-type">Self</span> &lt;: <span class="hljs-type">Movable</span>[<span class="hljs-type">Self</span>]] <span class="hljs-keyword">extends</span> <span class="hljs-type">WObject</span>[<span class="hljs-type">Self</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moved</span>:</span> <span class="hljs-type">Boolean</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>position: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Self</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>): <span class="hljs-type">Self</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveTo</span>(</span>pos: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, <span class="hljs-type">Self</span>] =
+    <span class="hljs-keyword">if</span> (moved) <span class="hljs-type">Left</span>(<span class="hljs-string">"Already moved this turn!"</span>)
+    <span class="hljs-comment">// F-Bound proves useful here</span>
+    <span class="hljs-keyword">else</span> <span class="hljs-type">Right</span>(withMoved(<span class="hljs-literal">true</span>).withPosition(pos))
+}
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Movable</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">InitialMoved</span> =</span> <span class="hljs-literal">false</span>
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="1cabfc46c203916d53897abb47740df0"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Fighter&nbsp;trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 414px; left: 0px; top: 213px;" data-block-id="ec06911fdb1d6488fe9a2147e8b735ee"><div class="sl-block-content" style="z-index: 12; font-size: 144%;"><pre class="scala"><code class=" hljs "><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Fighter</span>[</span><span class="hljs-type">Self</span> &lt;: <span class="hljs-type">Fighter</span>[<span class="hljs-type">Self</span>]] <span class="hljs-keyword">extends</span> <span class="hljs-type">WObject</span>[<span class="hljs-type">Self</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hasAttacked</span>:</span> <span class="hljs-type">Boolean</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>hasAttacked: <span class="hljs-type">Boolean</span>): <span class="hljs-type">Self</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">attack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span>[<span class="hljs-type">Target</span>]](
+    target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>
+  ): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">Self</span>, <span class="hljs-type">Target</span>)] =
+    <span class="hljs-keyword">if</span> (hasAttacked) <span class="hljs-type">Left</span>(<span class="hljs-string">"Already attacked this turn!"</span>)
+    <span class="hljs-keyword">else</span> <span class="hljs-type">Right</span>((withHasAttacked(<span class="hljs-literal">true</span>), target.takeDamage(damage)))
+}
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Fighter</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">InitialHasAttacked</span> =</span> <span class="hljs-literal">false</span>
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="dfab5b8a668f8a0de0f2f46bce72a383"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Defining objects</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 879px; height: 490px; left: 41px; top: 140px;" data-block-id="fa659f27008c5e1e7201ca9eaf1969f1"><div class="sl-block-content" style="z-index: 12; font-size: 129%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">uuid</span> =</span> <span class="hljs-type">UUID</span>.randomUUID()
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rock</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">WObject</span>[<span class="hljs-type">Rock</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scout</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, 
+  moved: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Movable</span>.<span class="hljs-type">InitialMoved</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Movable</span>[<span class="hljs-type">Scout</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>) = copy(moved = moved)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>position: <span class="hljs-type">Vect2</span>) = copy(position = position)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Gunship</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>,
+  moved: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Movable</span>.<span class="hljs-type">InitialHasMoved</span>,
+  hasAttacked: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Fighter</span>.<span class="hljs-type">InitialHasAttacked</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Movable</span>[<span class="hljs-type">Gunship</span>] <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>[<span class="hljs-type">Gunship</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>position: <span class="hljs-type">Vect2</span>) = copy(position = position)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>) = copy(moved = moved)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>hasAttacked: <span class="hljs-type">Boolean</span>) = copy(hasAttacked = hasAttacked)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LaserTower</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, 
+  hasAttacked: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Fighter</span>.<span class="hljs-type">InitialHasAttacked</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Fighter</span>[<span class="hljs-type">LaserTower</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>hasAttacked: <span class="hljs-type">Boolean</span>) = copy(hasAttacked = hasAttacked)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = copy(hp = hp)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">rock</span> =</span> <span class="hljs-type">Rock</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>), <span class="hljs-number">10</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">scout</span> =</span> <span class="hljs-type">Scout</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>), <span class="hljs-number">20</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">gunship</span> =</span> <span class="hljs-type">Gunship</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>), <span class="hljs-number">50</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">laserTower</span> =</span> <span class="hljs-type">LaserTower</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>), <span class="hljs-number">200</span>)</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="6c854204617aaa2e5401518f499a00ac"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="07f8c029fd95b6f2fa4782932e40e574"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>The problems start</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 70px; left: 80px; top: 210px;" data-block-id="d5743c271f825cd846a1ca6663a081ed"><div class="sl-block-content" style="z-index: 11; font-size: 123%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objects</span>:</span> <span class="hljs-type">Set</span>[<span class="hljs-type">WObject</span>[<span class="hljs-type">A</span>] <span class="hljs-keyword">forSome</span> { <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">A</span> <span class="hljs-title">&lt;</span>:</span> <span class="hljs-type">WObject</span>[<span class="hljs-type">A</span>] }] =
+  <span class="hljs-type">Set</span>(rock, scout, gunship, laserTower)</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="18780e0eee957eb78c9ea9d1eda41fe7" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 101px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>You need an existential type to specify the type of collection precisely.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="849310501ad50c6177baf1eeb3108a9e" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 160px; top: 331px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="0">
+<p>But can't you just type it as Set[WObject[_]]?</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 630px;" data-block-id="e522e5e983597d8528f68a4c0c901c55"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-fragment-index="2">
+<p>Yes, it is that horrible.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 175px; left: 0px; top: 420px;" data-block-id="4ea300dbf8655382fe573772886e1650"><div class="sl-block-content fragment" style="z-index: 16; font-size: 123%;" data-fragment-index="1"><pre><code class=" hljs oxygene">scala&gt; val objects: <span class="hljs-keyword">Set</span>[WObject[_]] = <span class="hljs-keyword">Set</span>(rock, scout, gunship, laserTower)
+
+<span class="hljs-comment">// NOPE!</span>
+scala&gt; objects.head.takeDamage(<span class="hljs-number">1</span>).takeDamage(<span class="hljs-number">1</span>)
+&lt;console&gt;:<span class="hljs-number">29</span>: error: value takeDamage <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> a member <span class="hljs-keyword">of</span> _$<span class="hljs-number">1</span>
+              objects.head.takeDamage(<span class="hljs-number">1</span>).takeDamage(<span class="hljs-number">1</span>)
+                                         ^</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="561fcf63dfc808019278e819cd06696f"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="56a360bb71c669f97d1edf7832696c10"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>And there's more!</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 238px; left: 0px; top: 252px;" data-block-id="50df65b42da4e3d24431fc6d61670721"><div class="sl-block-content" style="z-index: 12; font-size: 123%;"><pre class="scala"><code class=" hljs "><span class="hljs-comment">// Operation that needs one trait.</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span>(</span>from: <span class="hljs-type">Vect2</span>, to: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Either</span>[
+  <span class="hljs-type">String</span>, (<span class="hljs-type">Movable</span>[<span class="hljs-type">A</span>] <span class="hljs-keyword">forSome</span> { <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">A</span> <span class="hljs-title">&lt;</span>:</span> <span class="hljs-type">Movable</span>[<span class="hljs-type">A</span>] })
+] = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span>[_] <span class="hljs-keyword">if</span> obj.position == from =&gt; obj
+  }
+  objOpt.toRight(s<span class="hljs-string">"Can't find movable @ $from"</span>).right.flatMap(_.moveTo(to))
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 161px;" data-block-id="080d82190bd62a37e16752d3a2f5e1df"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Let's try to write an operation!</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="1d0b6d8865d4c4d3988830b75991f710" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 587px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>Seems legit, right?</p>
+
+<p><span style="font-size:24px">(if we ignore the horrible return type signature)</span></p>
+</div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="32e2834acef561aa3f54b7262ca56d21"><div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 639px;" data-block-id="ec99eb76c5fed8e9da50b3be5d9916eb"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="0">
+<p>"HA, HA, FU!" - sincerely yours, the compiler.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="33938d1bd2340c6f3d0d3d474edc2016" style="min-width: 30px; min-height: 30px; width: 960px; height: 618px; left: 0px; top: 0px;"><div class="sl-block-content" style="z-index: 12; font-size: 99%;"><pre><code class=" hljs nimrod">[error] /home/arturas/work/playground/src/main/scala/playground/<span class="hljs-type">FBounded</span>.scala:<span class="hljs-number">88</span>: no <span class="hljs-keyword">type</span> parameters <span class="hljs-keyword">for</span> <span class="hljs-keyword">method</span> flatMap: (f: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">WObject</span>[_$<span class="hljs-number">1</span>] <span class="hljs-keyword">with</span> playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] forSome { <span class="hljs-keyword">type</span> _$<span class="hljs-number">1</span>; <span class="hljs-keyword">type</span> _(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse) &lt;: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] } =&gt; scala.util.<span class="hljs-type">Either</span>[<span class="hljs-type">AA</span>,Y])scala.util.<span class="hljs-type">Either</span>[<span class="hljs-type">AA</span>,Y] exist so that it can be applied to arguments (playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">WObject</span>[_$<span class="hljs-number">1</span>] <span class="hljs-keyword">with</span> playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] forSome { <span class="hljs-keyword">type</span> _$<span class="hljs-number">1</span>; <span class="hljs-keyword">type</span> _(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse) &lt;: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] } =&gt; scala.util.<span class="hljs-type">Either</span>[<span class="hljs-type">String</span>,(some other)_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] forSome { <span class="hljs-keyword">type</span> (some other)_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse) &lt;: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[(some other)_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] })
+[error]  --- because ---
+[error] argument expression's <span class="hljs-keyword">type</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> compatible <span class="hljs-keyword">with</span> formal parameter <span class="hljs-keyword">type</span>;
+[error]  found   : playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">WObject</span>[_$<span class="hljs-number">1</span>] <span class="hljs-keyword">with</span> playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] forSome { <span class="hljs-keyword">type</span> _$<span class="hljs-number">1</span>; <span class="hljs-keyword">type</span> _(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse) &lt;: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] } =&gt; scala.util.<span class="hljs-type">Either</span>[<span class="hljs-type">String</span>,(some other)_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] forSome { <span class="hljs-keyword">type</span> (some other)_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse) &lt;: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[(some other)_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] }
+[error]  required: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">WObject</span>[_$<span class="hljs-number">1</span>] <span class="hljs-keyword">with</span> playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] forSome { <span class="hljs-keyword">type</span> _$<span class="hljs-number">1</span>; <span class="hljs-keyword">type</span> _(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse) &lt;: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] } =&gt; scala.util.<span class="hljs-type">Either</span>[?<span class="hljs-type">AA</span>,?Y]
+[error]   objOpt.toRight(<span class="hljs-string">s"Can't find movable @ $from"</span>).right.flatMap(_.moveTo(to))
+[error]                                                       ^
+[error] /home/arturas/work/playground/src/main/scala/playground/<span class="hljs-type">FBounded</span>.scala:<span class="hljs-number">88</span>: <span class="hljs-keyword">type</span> mismatch;
+[error]  found   : playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">WObject</span>[_$<span class="hljs-number">1</span>] <span class="hljs-keyword">with</span> playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] forSome { <span class="hljs-keyword">type</span> _$<span class="hljs-number">1</span>; <span class="hljs-keyword">type</span> _(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse) &lt;: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] } =&gt; scala.util.<span class="hljs-type">Either</span>[<span class="hljs-type">String</span>,(some other)_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] forSome { <span class="hljs-keyword">type</span> (some other)_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse) &lt;: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[(some other)_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] }
+[error]  required: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">WObject</span>[_$<span class="hljs-number">1</span>] <span class="hljs-keyword">with</span> playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] forSome { <span class="hljs-keyword">type</span> _$<span class="hljs-number">1</span>; <span class="hljs-keyword">type</span> _(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse) &lt;: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[_(<span class="hljs-keyword">in</span> <span class="hljs-keyword">method</span> applyOrElse)] } =&gt; scala.util.<span class="hljs-type">Either</span>[<span class="hljs-type">AA</span>,Y]
+[error]   objOpt.toRight(<span class="hljs-string">s"Can't find movable @ $from"</span>).right.flatMap(_.moveTo(to))
+[error]                                                                       ^
+[error] /home/arturas/work/playground/src/main/scala/playground/<span class="hljs-type">FBounded</span>.scala:<span class="hljs-number">88</span>: <span class="hljs-keyword">type</span> mismatch;
+[error]  found   : scala.util.<span class="hljs-type">Either</span>[<span class="hljs-type">AA</span>,Y]
+[error]  required: <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>,playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[A] forSome { <span class="hljs-keyword">type</span> A &lt;: playground.<span class="hljs-type">FBounded</span>.<span class="hljs-type">Movable</span>[A] }]
+[error]   objOpt.toRight(<span class="hljs-string">s"Can't find movable @ $from"</span>).right.flatMap(_.moveTo(to))
+[error]                                                              ^
+[error] three errors found
+[error] (compile:compile) <span class="hljs-type">Compilation</span> failed
+</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="41025990b7441d8d58564fff6715bef4"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 15px; height: auto;" data-block-id="2213b35def05fc72533c1d684b2ecbd4"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>In case you are not impressed</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="83da0a2c0e5f9211722eb6a3612e9a64" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 101px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Lets write an operation that needs a compound type!</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="e118601ff278db28366b4cf173bbf243" style="min-width: 30px; min-height: 30px; width: 900px; height: 507px; left: 35px; top: 167px;"><div class="sl-block-content" style="z-index: 13; font-size: 116%;"><pre class="scala"><code class=" hljs "><span class="hljs-comment">// Operation that needs two traits.</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveAndAttack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span>[<span class="hljs-type">Target</span>]](
+  from: <span class="hljs-type">Vect2</span>, target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>
+): <span class="hljs-type">Either</span>[
+  <span class="hljs-type">String</span>,
+  (
+    <span class="hljs-type">Movable</span>[<span class="hljs-type">A</span>] <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>[<span class="hljs-type">A</span>]
+        <span class="hljs-keyword">forSome</span> { <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">A</span> <span class="hljs-title">&lt;</span>:</span> <span class="hljs-type">Movable</span>[<span class="hljs-type">A</span>] <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>[<span class="hljs-type">A</span>] },
+    <span class="hljs-type">Target</span>
+  )
+] = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span>:</span> <span class="hljs-type">Option</span>[
+    <span class="hljs-type">Movable</span>[<span class="hljs-type">A</span>] <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>[<span class="hljs-type">A</span>]
+        <span class="hljs-keyword">forSome</span> { <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">A</span> <span class="hljs-title">&lt;</span>:</span> <span class="hljs-type">Movable</span>[<span class="hljs-type">A</span>] <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>[<span class="hljs-type">A</span>] }
+  ] = objects.collectFirst {
+    <span class="hljs-comment">// Generics are erased at runtime, can't match on concrete type.</span>
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span>[_] <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>[_] <span class="hljs-keyword">if</span> obj.position == from =&gt; obj
+  }
+  objOpt.toRight(s<span class="hljs-string">"Can't find movable+fighter @ $from"</span>)
+    .right.flatMap(_.moveTo(target.position))
+    .right.flatMap(obj <span class="hljs-comment">/* obj is Any here :( */</span> =&gt; ???)
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="6600ffcaf395a59442bc6fdf14b9f9f6"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="5239453dadb9af9664ae5cb34152143b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Why do you hate me?</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 900px; height: 460px; left: 30px; top: 190px;" data-block-id="6fe0b010bbd4cef6cfb0aa996b7d9287"><div class="sl-block-content" style="z-index: 13; font-size: 116%;"><pre><code class=" hljs scheme"><span class="hljs-list">[<span class="hljs-keyword">error</span>] /home/arturas/work/playground/src/main/scala/playground/FBounded.scala:107: type mismatch<span class="hljs-comment">;</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  found   : playground.FBounded.WObject<span class="hljs-list">[<span class="hljs-keyword">_$1</span>] with playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">_</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">_</span>]
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  required: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span>] forSome { type A &lt;: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span>] }
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]     case obj: Movable<span class="hljs-list">[<span class="hljs-keyword">_</span>] with Fighter<span class="hljs-list">[<span class="hljs-keyword">_</span>] if obj.position == from =&gt; obj
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]                                                                     ^
+<span class="hljs-list">[<span class="hljs-keyword">error</span>] /home/arturas/work/playground/src/main/scala/playground/FBounded.scala:110: no type parameters for method flatMap: <span class="hljs-list">(<span class="hljs-keyword">f:</span> playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] forSome { type A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span> &lt;: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] } =&gt; scala.util.Either<span class="hljs-list">[<span class="hljs-keyword">AA</span>,Y])scala.util.Either<span class="hljs-list">[<span class="hljs-keyword">AA</span>,Y] exist so that it can be applied to arguments <span class="hljs-list">(<span class="hljs-keyword">playground.FBounded.Movable</span><span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] forSome { type A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span> &lt;: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] } =&gt; scala.util.Either<span class="hljs-list">[<span class="hljs-keyword">String</span>,<span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] forSome { type <span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span> &lt;: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] })
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  --- because ---
+<span class="hljs-list">[<span class="hljs-keyword">error</span>] argument expression<span class="hljs-variable">'s</span> type is not compatible with formal parameter type<span class="hljs-comment">;</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  found   : playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] forSome { type A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span> &lt;: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] } =&gt; scala.util.Either<span class="hljs-list">[<span class="hljs-keyword">String</span>,<span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] forSome { type <span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span> &lt;: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] }
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  required: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] forSome { type A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span> &lt;: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] } =&gt; scala.util.Either<span class="hljs-list">[<span class="hljs-keyword">?AA</span>,?Y]
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]     .right.flatMap<span class="hljs-list">(<span class="hljs-keyword">_.moveTo</span><span class="hljs-list">(<span class="hljs-keyword">target.position</span>)</span>)</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]            ^
+<span class="hljs-list">[<span class="hljs-keyword">error</span>] /home/arturas/work/playground/src/main/scala/playground/FBounded.scala:110: type mismatch<span class="hljs-comment">;</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  found   : playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] forSome { type A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span> &lt;: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] } =&gt; scala.util.Either<span class="hljs-list">[<span class="hljs-keyword">String</span>,<span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] forSome { type <span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span> &lt;: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-list">(<span class="hljs-keyword">some</span> other)</span>A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] }
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  required: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] forSome { type A<span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span> &lt;: playground.FBounded.Movable<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] with playground.FBounded.Fighter<span class="hljs-list">[<span class="hljs-keyword">A</span><span class="hljs-list">(<span class="hljs-keyword">in</span> value objOpt)</span>] } =&gt; scala.util.Either<span class="hljs-list">[<span class="hljs-keyword">AA</span>,Y]
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]     .right.flatMap<span class="hljs-list">(<span class="hljs-keyword">_.moveTo</span><span class="hljs-list">(<span class="hljs-keyword">target.position</span>)</span>)</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]                            ^
+<span class="hljs-list">[<span class="hljs-keyword">error</span>] three errors found
+<span class="hljs-list">[<span class="hljs-keyword">error</span>] <span class="hljs-list">(<span class="hljs-keyword">compile:compile</span>)</span> Compilation failed
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="ac9d5f9c37c9293fb3315f5e075236eb"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="f3cbf5b6ea2d2e440662510286c1aff3"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Enough is enough</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="e9aa456804459a073efbbb8abe98d5bc" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 296px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" data-fragment-index="1">
+<p>This relationship is not good for you.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="7f5d09fccde30545c4c307fc98d52ddd" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 226px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
+<p>It's not going to work out.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="43b07c5e5ccec6f5014e02225848adcd" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 366px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-fragment-index="2">
+<p>Stop sobbing and let it go.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 436px;" data-block-id="dfaf593df698f096c818641c8448b778"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-fragment-index="3">
+<p>It is time to <strong>move on</strong>...</p>
+</div></div></section></section><section data-previous-indexv="0" style="display: none;" aria-hidden="true" class="stack future" data-id="07d54da183bd359f2b0894c68002ee78" hidden=""><section style="display: none;" data-id="8ab41c64c9678c21b31c4dec403e8019"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 313px; height: auto;" data-block-id="e71ae42684daa033b4a67c23aba430ae"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>S#2: Abstract Type Members</h2>
+</div></div>
+</section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="737685de1dc317ed47c3582515574521"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>World Object trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 377px; left: 0px; top: 162px;" data-block-id="14dc2c7b29930a4dacf886152c088e87"><div class="sl-block-content" style="z-index: 12; font-size: 146%;"><pre><code class=" hljs scala"><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vect2</span>(</span>x: <span class="hljs-type">Int</span>, y: <span class="hljs-type">Int</span>)
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> <span class="hljs-title">&lt;</span>:</span> <span class="hljs-type">WObject</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">id</span>:</span> <span class="hljs-type">UUID</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">position</span>:</span> <span class="hljs-type">Vect2</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hp</span>:</span> <span class="hljs-type">Int</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>): <span class="hljs-type">Self</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">takeDamage</span>(</span>damage: <span class="hljs-type">Int</span>): <span class="hljs-type">Self</span> = withHp((hp - damage) max <span class="hljs-number">0</span>)
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="3f83d2172ca9dae0c6e4dbbfe9ddcc66"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Movable trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 490px; left: 80px; top: 140px;" data-block-id="5f83a03ce20026876f89826cdb1fa85c"><div class="sl-block-content" style="z-index: 12; font-size: 161%;"><pre class="scala"><code class=" hljs "><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Movable</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> <span class="hljs-title">&lt;</span>:</span> <span class="hljs-type">Movable</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moved</span>:</span> <span class="hljs-type">Boolean</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>position: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Self</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>): <span class="hljs-type">Self</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveTo</span>(</span>pos: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, <span class="hljs-type">Self</span>] =
+    <span class="hljs-keyword">if</span> (moved) <span class="hljs-type">Left</span>(<span class="hljs-string">"Already moved this turn!"</span>)
+    <span class="hljs-keyword">else</span> <span class="hljs-type">Right</span>(withMoved(<span class="hljs-literal">true</span>).withPosition(pos))
+}
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Movable</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">InitialMoved</span> =</span> <span class="hljs-literal">false</span>
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="9fb5902b3c72555572b67e1e4f37ffcb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Fighter trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 474px; left: 0px; top: 156px;" data-block-id="f7705743e17a3aa311bbb7385b54aa49"><div class="sl-block-content" style="z-index: 12; font-size: 142%;"><pre class="scala"><code class=" hljs "><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Fighter</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> <span class="hljs-title">&lt;</span>:</span> <span class="hljs-type">Fighter</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hasAttacked</span>:</span> <span class="hljs-type">Boolean</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>hasAttacked: <span class="hljs-type">Boolean</span>): <span class="hljs-type">Self</span>
+
+  <span class="hljs-comment">// Use type refinement to only allow types, where Self is Target.</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">attack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span> { <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> <span class="hljs-type">Target</span> }](
+    target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>
+  ): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">Self</span>, <span class="hljs-type">Target</span>)] =
+    <span class="hljs-keyword">if</span> (hasAttacked) <span class="hljs-type">Left</span>(<span class="hljs-string">"Already attacked this turn!"</span>)
+    <span class="hljs-keyword">else</span> <span class="hljs-type">Right</span>((withHasAttacked(<span class="hljs-literal">true</span>), target.takeDamage(damage)))
+}
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Fighter</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">InitialHasAttacked</span> =</span> <span class="hljs-literal">false</span>
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="84b1af297a46baeaa5ae4b147cf9bdb7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Defining objects</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 474px; left: 0px; top: 183px;" data-block-id="32363ffd6eee4a64b29d4d4ccb25dd9e"><div class="sl-block-content" style="z-index: 12; font-size: 121%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">uuid</span> =</span> <span class="hljs-type">UUID</span>.randomUUID()
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rock</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">WObject</span> {
+  <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> <span class="hljs-type">Rock</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scout</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>,
+  moved: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Movable</span>.<span class="hljs-type">InitialMoved</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Movable</span> {
+  <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> <span class="hljs-type">Scout</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>) = copy(moved = moved)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>position: <span class="hljs-type">Vect2</span>) = copy(position = position)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Gunship</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, 
+  moved: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Movable</span>.<span class="hljs-type">InitialMoved</span>,
+  hasAttacked: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Fighter</span>.<span class="hljs-type">InitialHasAttacked</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span> {
+  <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> <span class="hljs-type">Gunship</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>position: <span class="hljs-type">Vect2</span>) = copy(position = position)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>) = copy(moved = moved)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>hasAttacked: <span class="hljs-type">Boolean</span>) = copy(hasAttacked = hasAttacked)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LaserTower</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, 
+  hasAttacked: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Fighter</span>.<span class="hljs-type">InitialHasAttacked</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Fighter</span> {
+  <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> <span class="hljs-type">LaserTower</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>hasAttacked: <span class="hljs-type">Boolean</span>) = copy(hasAttacked = hasAttacked)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = copy(hp = hp)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">rock</span> =</span> <span class="hljs-type">Rock</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>), <span class="hljs-number">10</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">scout</span> =</span> <span class="hljs-type">Scout</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>), <span class="hljs-number">20</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">gunship</span> =</span> <span class="hljs-type">Gunship</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>), <span class="hljs-number">50</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">laserTower</span> =</span> <span class="hljs-type">LaserTower</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>), <span class="hljs-number">200</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objects</span>:</span> <span class="hljs-type">Set</span>[<span class="hljs-type">WObject</span>] = <span class="hljs-type">Set</span>(rock, scout, gunship, laserTower)</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="413b861e5d28c16daf419007bca89a3b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Operation that needs one trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 237px; left: 0px; top: 232px;" data-block-id="a1cb63a334edfd400130e4467d8b9a40"><div class="sl-block-content" style="z-index: 12; font-size: 156%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span>(</span>from: <span class="hljs-type">Vect2</span>, to: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, <span class="hljs-type">Movable</span>] = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">if</span> obj.position == from =&gt; obj
+  }
+  objOpt.toRight(s<span class="hljs-string">"Can't find movable @ $from"</span>)
+    .right.flatMap(_.moveTo(to))
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="aa1c555237b9b40564d9a344c374f6f3"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Operation that needs two&nbsp;traits</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 390px; left: 0px; top: 225px;" data-block-id="7cd5b18685471dbc469b2a580156aac5"><div class="sl-block-content" style="z-index: 12; font-size: 157%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveAndAttack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span> { <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> <span class="hljs-type">Target</span> }](
+  from: <span class="hljs-type">Vect2</span>, target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>
+): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>, <span class="hljs-type">Target</span>)] = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span> 
+    <span class="hljs-keyword">if</span> obj.position == from =&gt; 
+      obj
+  }
+  objOpt.toRight(s<span class="hljs-string">"Can't find movable+fighter @ $from"</span>)
+    .right.flatMap(_.moveTo(target.position))
+    .right.flatMap(_.attack(target, damage))
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="42353df537ab289dc2656d4f01a69a7c"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="860bd5f963189b136b0b34fdd2f8d276"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Is this it?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="853740c5463f5536411b86231e4f4553" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 121px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>It looks pretty great! Lets compile!</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="c647c0508787b85000f71f3503e847e1" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 541px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="0">
+<p>two errors found :|</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="015bd4f75f7ffab99ace43c2eb7de9f1" style="min-width: 30px; min-height: 30px; width: 960px; height: 300px; left: 0px; top: 201px;"><div class="sl-block-content fragment" style="z-index: 13; font-size: 115%;" data-fragment-index="0"><pre><code class=" hljs scheme"><span class="hljs-list">[<span class="hljs-keyword">error</span>] /home/arturas/work/playground/src/main/scala/playground/AbstractTypeMember.scala:35: type mismatch<span class="hljs-comment">;</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  found   : Movable.this.Self#Self
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  required: Movable.this.Self
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]     else Right<span class="hljs-list">(<span class="hljs-keyword">withMoved</span><span class="hljs-list">(<span class="hljs-keyword">true</span>)</span>.withPosition<span class="hljs-list">(<span class="hljs-keyword">pos</span>)</span>)</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]                                            ^
+<span class="hljs-list">[<span class="hljs-keyword">error</span>] /home/arturas/work/playground/src/main/scala/playground/AbstractTypeMember.scala:109: type mismatch<span class="hljs-comment">;</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  found   : Either<span class="hljs-list">[<span class="hljs-keyword">String</span>,<span class="hljs-list">(<span class="hljs-keyword">x$3.Self</span>, Target)</span>]
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  required: scala.util.Either<span class="hljs-list">[<span class="hljs-keyword">String</span>,<span class="hljs-list">(<span class="hljs-keyword">playground.AbstractTypeMember.Movable</span> with playground.AbstractTypeMember.Fighter, Target)</span>]
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]     .right.flatMap<span class="hljs-list">(<span class="hljs-keyword">_.attack</span><span class="hljs-list">(<span class="hljs-keyword">target</span>, damage)</span>)</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]                            ^
+<span class="hljs-list">[<span class="hljs-keyword">error</span>] two errors found
+<span class="hljs-list">[<span class="hljs-keyword">error</span>] <span class="hljs-list">(<span class="hljs-keyword">compile:compile</span>)</span> Compilation failed
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f037c7b1d345c265fe947cae4bbfaea8" style="height: auto; min-width: 30px; min-height: 30px; width: 84px; left: 438px; top: 589px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="1">
+<p><strong><span style="font-size:64px">:|</span></strong></p>
+</div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="9322468f84d1ac1044ee33421ae165a3"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="df25f4d11ed4a6a94c80b32a9cda1587"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Lets analyze</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 792px; height: 139px; left: 84px; top: 186px;" data-block-id="33e7265f868eba218e0bdf22f36b2ad6"><div class="sl-block-content" style="z-index: 12; font-size: 133%;"><pre><code class=" hljs groovy">[error] <span class="hljs-regexp">/home/</span>arturas<span class="hljs-regexp">/work/</span>playground<span class="hljs-regexp">/src/</span>main<span class="hljs-regexp">/scala/</span>playground/AbstractTypeMember.<span class="hljs-string">scala:</span><span class="hljs-number">35</span>: type mismatch;
+[error]  <span class="hljs-string">found   :</span> Movable.<span class="hljs-keyword">this</span>.Self#Self
+[error]  <span class="hljs-string">required:</span> Movable.<span class="hljs-keyword">this</span>.Self
+[error]     <span class="hljs-keyword">else</span> Right(withMoved(<span class="hljs-literal">true</span>).withPosition(pos))</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="449849fec6af3984bce8cbf94b069c6b" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 348px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>What is happening here?</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="e18c51fd453e0c169a5b534aaf846e7b" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 437px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>Basically Movable#Self doesn't have to be same object as far as compiler is concerned.</p>
+</div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="f12311f6df0218c57595daf67851f818"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="7a58119a4ded882abb73f3f426dd373b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Do not trust me?</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 626px; left: 0px; top: 74px;" data-block-id="265aab47d1f0fd174f72839a9db76996"><div class="sl-block-content" style="z-index: 12; font-size: 176%;"><pre><code class=" hljs scala">scala&gt; :paste
+<span class="hljs-comment">// Entering paste mode (ctrl-D to finish)</span>
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Evil1</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">WObject</span> {
+  <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> <span class="hljs-type">Evil2</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = <span class="hljs-type">Evil2</span>(position, hp, id)
+}
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Evil2</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">WObject</span> {
+  <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> <span class="hljs-type">Evil1</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = <span class="hljs-type">Evil1</span>(position, hp, id)
+}
+
+<span class="hljs-comment">// Exiting paste mode, now interpreting.</span>
+
+defined <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Evil1</span>
+</span>defined <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Evil2</span>
+</span>
+scala&gt; <span class="hljs-type">Evil1</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>,<span class="hljs-number">1</span>), <span class="hljs-number">10</span>).withHp(<span class="hljs-number">9</span>)
+res0: <span class="hljs-type">Evil2</span> = <span class="hljs-type">Evil2</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>,<span class="hljs-number">1</span>),<span class="hljs-number">9</span>,<span class="hljs-number">3e05</span>e82c-<span class="hljs-number">11</span>f0-<span class="hljs-number">466</span>a-<span class="hljs-number">83</span>c8-<span class="hljs-number">0e4</span>ebb1e9d6a)
+
+scala&gt; res0.withHp(<span class="hljs-number">8</span>)
+res1: <span class="hljs-type">Evil1</span> = <span class="hljs-type">Evil1</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>,<span class="hljs-number">1</span>),<span class="hljs-number">8</span>,<span class="hljs-number">3e05</span>e82c-<span class="hljs-number">11</span>f0-<span class="hljs-number">466</span>a-<span class="hljs-number">83</span>c8-<span class="hljs-number">0e4</span>ebb1e9d6a)
+
+<span class="hljs-comment">// I know! Isn't this great?</span></code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="a3fb694d6bc76394b6abac37d36008fe"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="d2b0a2c1b1aef0613202042f5785b39d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Why does it happen?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f9d30a321f23876d8a2e85186fdc1ed9" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 173px; top: 140px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Basically nothing in the type definition of</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="929c8f478d1ed6d97f7494ff915af98f" style="min-width: 30px; min-height: 30px; width: 352px; height: 103px; left: 304px; top: 229px;"><div class="sl-block-content" style="z-index: 13; font-size: 154%;"><pre><code class=" hljs rust"><span class="hljs-keyword">trait</span> <span class="hljs-title">WObject</span> {
+  <span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> &lt;: WObject
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="d1ff54ec7b27f4217d554b59d87514e2" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 381px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>implies that Self must be of the same type.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="d677c60e09063b25af8722ec9ca359b6" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 471px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15;" data-fragment-index="0">
+<p>But... this is fixable.</p>
+</div></div>
+<div class="sl-block" data-block-type="code" data-block-id="007186e5a94e1c9ec8eb0e49b6e2dacd" style="min-width: 30px; min-height: 30px; width: 800px; height: 142px; left: 80px; top: 543px;"><div class="sl-block-content fragment" style="z-index: 16; font-size: 136%;" data-fragment-index="1"><pre><code class=" hljs rust"><span class="hljs-keyword">trait</span> <span class="hljs-title">WObject</span> { <span class="hljs-keyword">self</span> =&gt;
+  <span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> &lt;: WObject { <span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> = <span class="hljs-keyword">self</span>.Self }
+  <span class="hljs-comment">// or type Self &gt;: this.type &lt;: WObject</span>
+}
+<span class="hljs-comment">// And so on.</span></code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="3cb73c3bf8bfafa9c0cd4e3302cccd10"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="64d1a65dfe7abed59da2b7c1fe563d14"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Now the second error is different</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 191px; left: 0px; top: 244px;" data-block-id="588f5eab7b7e7d1475832b3c70799a92"><div class="sl-block-content" style="z-index: 12; font-size: 114%;"><pre><code class=" hljs scheme"><span class="hljs-list">[<span class="hljs-keyword">error</span>] /home/arturas/work/playground/src/main/scala/playground/AbstractTypeMember.scala:122: type mismatch<span class="hljs-comment">;</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  found   : Either<span class="hljs-list">[<span class="hljs-keyword">String</span>,<span class="hljs-list">(<span class="hljs-keyword">_8.Self</span>, Target)</span>]
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]  required: scala.util.Either<span class="hljs-list">[<span class="hljs-keyword">String</span>,<span class="hljs-list">(<span class="hljs-keyword">playground.AbstractTypeMember.Movable</span> with playground.AbstractTypeMember.Fighter, Target)</span>]
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]     .right.flatMap<span class="hljs-list">(<span class="hljs-keyword">_.attack</span><span class="hljs-list">(<span class="hljs-keyword">target</span>, damage)</span>)</span>
+<span class="hljs-list">[<span class="hljs-keyword">error</span>]                            ^
+<span class="hljs-list">[<span class="hljs-keyword">error</span>] one error found
+<span class="hljs-list">[<span class="hljs-keyword">error</span>] <span class="hljs-list">(<span class="hljs-keyword">compile:compile</span>)</span> Compilation failed
+</span></span></span></span></span></span></span></span></span></code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="6cc3707681a23a942cd242876b948e08" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 521px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>Turns out when you combine traits, the types lose their "magical" properties.</p>
+</div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="8367581e14258474e8c7d8ebafd0f17c"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="b591a98b9e7c6137830fda10817c0013"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>A dirty workaround is possible</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 322px; left: 0px; top: 140px;" data-block-id="5b9b1996b304f4bc28abf502e958795a"><div class="sl-block-content" style="z-index: 12; font-size: 114%;"><pre class="scala"><code class=" hljs "><span class="hljs-comment">// Operation that needs two traits.</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveAndAttack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span> { <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> <span class="hljs-type">Target</span> }](
+  from: <span class="hljs-type">Vect2</span>, target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>
+): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>, <span class="hljs-type">Target</span>)] = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span> <span class="hljs-keyword">if</span> obj.position == from =&gt; obj
+  }
+  objOpt.toRight(s<span class="hljs-string">"Can't find movable+fighter @ $from"</span>)
+    .right.flatMap(_.moveTo(target.position))
+    .right.flatMap(_.attack(target, damage))
+    .right.map { <span class="hljs-keyword">case</span> (self, target) =&gt;
+      (<span class="hljs-comment">/* !!! */</span> self.asInstanceOf[<span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>] <span class="hljs-comment">/* !!! */</span>, target)
+    }
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 511px;" data-block-id="a819f603abe0dd5ca3b24252c2d63a73"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-fragment-index="0">
+<p>But these tend to get ugly when you have deeply nested data structures.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="e56abaa0c4a7a2d250e3629d4ec2527f" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 611px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="1">
+<p><strong>.map(_.right.map(_.map(_.map(_.asInstanceOf[...]))))</strong> anyone?</p>
+</div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="a6079ba6507c2ce56d704a56cf385969"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 19px; height: auto;" data-block-id="136f0dab0af04bd0568bf91f63b014ef"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>We could introduce a new trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 800px; height: 350px; left: 80px; top: 117px;" data-block-id="718122b3a392deef0f38e410d5c985d0"><div class="sl-block-content" style="z-index: 12; font-size: 117%;"><pre><code class=" hljs scala"><span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">MovableFighter</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">Movable</span> <span class="hljs-keyword"><span class="hljs-keyword">with</span></span> <span class="hljs-title">Fighter</span> {</span> self =&gt;
+  <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> <span class="hljs-title">&lt;</span>:</span> <span class="hljs-type">MovableFighter</span> { <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> self.<span class="hljs-type">Self</span> }
+}
+
+<span class="hljs-comment">// Operation that needs two traits.</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveAndAttack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span> { <span class="hljs-class"><span class="hljs-keyword">type</span> <span class="hljs-title">Self</span> =</span> <span class="hljs-type">Target</span> }](
+  from: <span class="hljs-type">Vect2</span>, target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>
+): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">MovableFighter</span>, <span class="hljs-type">Target</span>)] = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">MovableFighter</span> <span class="hljs-keyword">if</span> obj.position == from =&gt; obj
+  }
+  objOpt.toRight(s<span class="hljs-string">"Can't find movable+fighter @ $from"</span>)
+    .right.flatMap(_.moveTo(target.position))
+    .right.flatMap(_.attack(target, damage))
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 497px;" data-block-id="6e6608eda97c4e1a85aae35ac786f235"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;" data-fragment-index="0">
+<p>But now every combination of traits needs another type.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 560px;" data-block-id="ef1827731571e0faba37e37cab51df66"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;" data-fragment-index="1">
+<p>And once we create it we have not to forget to add it to every class which has these traits. This gets messy, fast.</p>
+</div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="a31ef84e3ad13c1a904816d0428f4bef"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;" data-block-id="49c029b067e9e3fd63965fb79fa01d95"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>We can do better</h1>
+</div></div></section></section><section data-previous-indexv="0" style="display: none;" aria-hidden="true" class="stack future" data-id="763d335d74e91816385d04d3be0a2b87" hidden=""><section style="display: none;" data-id="73696719b961d6c60f3e7468b54eb1da"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 313px; height: auto;" data-block-id="596f37ef553a91cd0db2c74fedfa22a6"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>S#3: Typeclasses</h2>
+</div></div>
+</section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="916f08b510a2d8a259a4358922ece4c7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>World Object trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 608px; left: 0px; top: 92px;" data-block-id="dd6dcb3706efd5fd68912d95ce6cdaf7"><div class="sl-block-content" style="z-index: 12; font-size: 157%;"><pre class="scala"><code class=" hljs "><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vect2</span>(</span>x: <span class="hljs-type">Int</span>, y: <span class="hljs-type">Int</span>)
+
+<span class="hljs-comment">// This is a nifty helper for using curried functions!</span>
+<span class="hljs-keyword">implicit</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnyExts</span>[</span><span class="hljs-type">A</span>](<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">a</span>:</span> <span class="hljs-type">A</span>) <span class="hljs-keyword">extends</span> <span class="hljs-type">AnyVal</span> {
+  <span class="hljs-comment">// `foo(3)(bar(4)(a))` vs `a |&gt; bar(4) |&gt; foo(3)`</span>
+  <span class="hljs-annotation">@inline</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">|&gt;</span>[</span><span class="hljs-type">B</span>](f: <span class="hljs-type">A</span> =&gt; <span class="hljs-type">B</span>) = f(a)
+}
+
+<span class="hljs-keyword">sealed</span> <span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">id</span>:</span> <span class="hljs-type">UUID</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">position</span>:</span> <span class="hljs-type">Vect2</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hp</span>:</span> <span class="hljs-type">Int</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">WObjectOps</span>[</span><span class="hljs-type">Self</span> &lt;: <span class="hljs-type">WObject</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>)(self: <span class="hljs-type">Self</span>): <span class="hljs-type">Self</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">takeDamage</span>(</span>damage: <span class="hljs-type">Int</span>)(self: <span class="hljs-type">Self</span>): <span class="hljs-type">Self</span> =
+    self |&gt; withHp((self.hp - damage) max <span class="hljs-number">0</span>)
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="e7e7f44a9a6e8e5e0fcf56336be75d34"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Movable trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 483px; left: 0px; top: 158px;" data-block-id="5732b7450075397f282d861660b3b9d2"><div class="sl-block-content" style="z-index: 12; font-size: 156%;"><pre class="scala"><code class=" hljs "><span class="hljs-keyword">sealed</span> <span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Movable</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moved</span>:</span> <span class="hljs-type">Boolean</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Movable</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">InitialMoved</span> =</span> <span class="hljs-literal">false</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">MovableOps</span>[</span><span class="hljs-type">Self</span> &lt;: <span class="hljs-type">Movable</span>] <span class="hljs-keyword">extends</span> <span class="hljs-type">WObjectOps</span>[<span class="hljs-type">Self</span>]  {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>position: <span class="hljs-type">Vect2</span>)(self: <span class="hljs-type">Self</span>): <span class="hljs-type">Self</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>)(self: <span class="hljs-type">Self</span>): <span class="hljs-type">Self</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveTo</span>(</span>pos: <span class="hljs-type">Vect2</span>)(self: <span class="hljs-type">Self</span>): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, <span class="hljs-type">Self</span>] =
+    <span class="hljs-keyword">if</span> (self.moved) <span class="hljs-type">Left</span>(<span class="hljs-string">"Already moved this turn!"</span>)
+    <span class="hljs-keyword">else</span> <span class="hljs-type">Right</span>(self |&gt; withMoved(<span class="hljs-literal">true</span>) |&gt; withPosition(pos))
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="1c041d344f3f2043d63a12eb1965ca9b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Fighter trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 612px; left: 0px; top: 88px;" data-block-id="312576bc7f147b934c615bf886e7afcb"><div class="sl-block-content" style="z-index: 12; font-size: 139%;"><pre class="scala"><code class=" hljs "><span class="hljs-keyword">sealed</span> <span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Fighter</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hasAttacked</span>:</span> <span class="hljs-type">Boolean</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Fighter</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">InitialHasAttacked</span> =</span> <span class="hljs-literal">false</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">FighterOps</span>[</span><span class="hljs-type">Self</span> &lt;: <span class="hljs-type">Fighter</span>] <span class="hljs-keyword">extends</span> <span class="hljs-type">WObjectOps</span>[<span class="hljs-type">Self</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>hasAttacked: <span class="hljs-type">Boolean</span>)(self: <span class="hljs-type">Self</span>): <span class="hljs-type">Self</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">attack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span>]
+  (target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>)(self: <span class="hljs-type">Self</span>)
+  (<span class="hljs-keyword">implicit</span> tc: <span class="hljs-type">WObjectOps</span>[<span class="hljs-type">Target</span>])
+  : <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">Self</span>, <span class="hljs-type">Target</span>)] =
+    <span class="hljs-keyword">if</span> (self.hasAttacked)
+      <span class="hljs-type">Left</span>(<span class="hljs-string">"Already attacked this turn!"</span>)
+    <span class="hljs-keyword">else</span>
+      <span class="hljs-type">Right</span>((
+        self |&gt; withHasAttacked(<span class="hljs-literal">true</span>), 
+        target |&gt; tc.takeDamage(damage)
+      ))
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="95246f8c246893b980872fadf0b53afd"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Defining objects</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 612px; left: 0px; top: 88px;" data-block-id="910ba9154f4983abb3c9e40d350d702d"><div class="sl-block-content" style="z-index: 12; font-size: 121%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">uuid</span> =</span> <span class="hljs-type">UUID</span>.randomUUID()
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rock</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">WObject</span>
+<span class="hljs-keyword">implicit</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">RockOps</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">WObjectOps</span>[</span><span class="hljs-type">Rock</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>)(self: <span class="hljs-type">Rock</span>) = self.copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scout</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, 
+  moved: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Movable</span>.<span class="hljs-type">InitialMoved</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Movable</span>
+<span class="hljs-keyword">implicit</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">ScoutOps</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">MovableOps</span>[</span><span class="hljs-type">Scout</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>pos: <span class="hljs-type">Vect2</span>)(self: <span class="hljs-type">Scout</span>) = self.copy(position = pos)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>)(self: <span class="hljs-type">Scout</span>) = self.copy(moved = moved)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>)(self: <span class="hljs-type">Scout</span>) = self.copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Gunship</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, 
+  moved: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Movable</span>.<span class="hljs-type">InitialMoved</span>,
+  hasAttacked: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Fighter</span>.<span class="hljs-type">InitialHasAttacked</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>
+<span class="hljs-keyword">implicit</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">GunshipOps</span> 
+</span><span class="hljs-keyword">extends</span> <span class="hljs-type">MovableOps</span>[<span class="hljs-type">Gunship</span>] <span class="hljs-keyword">with</span> <span class="hljs-type">FighterOps</span>[<span class="hljs-type">Gunship</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>pos: <span class="hljs-type">Vect2</span>)(self: <span class="hljs-type">Gunship</span>) = self.copy(position = pos)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>)(self: <span class="hljs-type">Gunship</span>) = self.copy(moved = moved)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>v: <span class="hljs-type">Boolean</span>)(self: <span class="hljs-type">Gunship</span>) = self.copy(hasAttacked = v)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>)(self: <span class="hljs-type">Gunship</span>) = self.copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LaserTower</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, 
+  hasAttacked: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Fighter</span>.<span class="hljs-type">InitialHasAttacked</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Fighter</span>
+<span class="hljs-keyword">implicit</span> <span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">LaserTowerOps</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">FighterOps</span>[</span><span class="hljs-type">LaserTower</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>hasAttacked: <span class="hljs-type">Boolean</span>)(self: <span class="hljs-type">LaserTower</span>) =
+    self.copy(hasAttacked = hasAttacked)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>)(self: <span class="hljs-type">LaserTower</span>) = self.copy(hp = hp)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">rock</span> =</span> <span class="hljs-type">Rock</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>), <span class="hljs-number">10</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">scout</span> =</span> <span class="hljs-type">Scout</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>), <span class="hljs-number">20</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">gunship</span> =</span> <span class="hljs-type">Gunship</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>), <span class="hljs-number">50</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">laserTower</span> =</span> <span class="hljs-type">LaserTower</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>), <span class="hljs-number">200</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objects</span>:</span> <span class="hljs-type">Set</span>[<span class="hljs-type">WObject</span>] = <span class="hljs-type">Set</span>(rock, scout, gunship, laserTower)</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 22px; height: auto;" data-block-id="40b1f5d7aa900e19b529be2e253c4723"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Converting objects to ops</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 545px; left: 0px; top: 130px;" data-block-id="def0b2326a72ce7c6f0db69bab29ffd3"><div class="sl-block-content" style="z-index: 12; font-size: 127%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">toWObjectOps</span>[</span><span class="hljs-type">A</span> &lt;: <span class="hljs-type">WObject</span>](obj: <span class="hljs-type">A</span>): <span class="hljs-type">WObjectOps</span>[<span class="hljs-type">A</span>] = (
+  ((obj: <span class="hljs-type">WObject</span> <span class="hljs-comment">/* downcast for sealed pattern matching */</span>) <span class="hljs-keyword">match</span> {
+    <span class="hljs-keyword">case</span> o: <span class="hljs-type">Rock</span> =&gt; <span class="hljs-type">RockOps</span>
+    <span class="hljs-keyword">case</span> o: <span class="hljs-type">Scout</span> =&gt; <span class="hljs-type">ScoutOps</span>
+    <span class="hljs-keyword">case</span> o: <span class="hljs-type">Gunship</span> =&gt; <span class="hljs-type">GunshipOps</span>
+    <span class="hljs-keyword">case</span> o: <span class="hljs-type">LaserTower</span> =&gt; <span class="hljs-type">LaserTowerOps</span>
+  }): <span class="hljs-type">WObjectOps</span>[_] <span class="hljs-comment">/* This ensures our return type is WObjectOps */</span>
+).asInstanceOf[<span class="hljs-type">WObjectOps</span>[<span class="hljs-type">A</span>]] <span class="hljs-comment">/* We need this cast to turn _ into A */</span>
+<span class="hljs-comment">// We have pattern matched all cases, thus this will never fail in runtime</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">toMovableOps</span>[</span><span class="hljs-type">A</span> &lt;: <span class="hljs-type">Movable</span>](obj: <span class="hljs-type">A</span>): <span class="hljs-type">MovableOps</span>[<span class="hljs-type">A</span>] =
+  (((obj: <span class="hljs-type">Movable</span>) <span class="hljs-keyword">match</span> {
+    <span class="hljs-keyword">case</span> o: <span class="hljs-type">Scout</span> =&gt; <span class="hljs-type">ScoutOps</span>
+    <span class="hljs-keyword">case</span> o: <span class="hljs-type">Gunship</span> =&gt; <span class="hljs-type">GunshipOps</span>
+  }): <span class="hljs-type">MovableOps</span>[_]).asInstanceOf[<span class="hljs-type">MovableOps</span>[<span class="hljs-type">A</span>]]
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">toFighterOps</span>[</span><span class="hljs-type">A</span> &lt;: <span class="hljs-type">Fighter</span>](obj: <span class="hljs-type">A</span>): <span class="hljs-type">FighterOps</span>[<span class="hljs-type">A</span>] =
+  (((obj: <span class="hljs-type">Fighter</span>) <span class="hljs-keyword">match</span> {
+    <span class="hljs-keyword">case</span> o: <span class="hljs-type">Gunship</span> =&gt; <span class="hljs-type">GunshipOps</span>
+    <span class="hljs-keyword">case</span> o: <span class="hljs-type">LaserTower</span> =&gt; <span class="hljs-type">LaserTowerOps</span>
+  }): <span class="hljs-type">FighterOps</span>[_]).asInstanceOf[<span class="hljs-type">FighterOps</span>[<span class="hljs-type">A</span>]]</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="0ed276a9c3189664b5d0c21e2282da01"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Operation that needs one trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 236px; left: 0px; top: 232px;" data-block-id="416c87422c701b413c55044c9f0d5488"><div class="sl-block-content" style="z-index: 12; font-size: 155%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span>(</span>from: <span class="hljs-type">Vect2</span>, to: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, <span class="hljs-type">Movable</span>] = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">if</span> obj.position == from =&gt; obj
+  }
+  objOpt.toRight(s<span class="hljs-string">"Can't find movable @ $from"</span>)
+    .right.flatMap(o =&gt; o |&gt; toMovableOps(o).moveTo(to))
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="59456060db4b5370b10627a2021af6ef"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Operation that needs two traits</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 593px; left: 0px; top: 107px;" data-block-id="b29da04ff4853509225aee2ef4270182"><div class="sl-block-content" style="z-index: 12; font-size: 159%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveAndAttack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span> : <span class="hljs-type">WObjectOps</span>](
+  from: <span class="hljs-type">Vect2</span>, target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>
+): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>, <span class="hljs-type">Target</span>)] = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span> 
+    <span class="hljs-keyword">if</span> obj.position == from =&gt; 
+      obj
+  }
+  objOpt.toRight(s<span class="hljs-string">"Can't find movable+fighter @ $from"</span>)
+    .right.flatMap { o =&gt; 
+      o |&gt; toMovableOps(o).moveTo(target.position)
+    }.right.flatMap { o =&gt; 
+      o |&gt; toFighterOps(o).attack(target, damage)
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">target</span> =</span> objects.head
+moveAndAttack(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>), target, <span class="hljs-number">10</span>)(toWObjectOps(target))</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="344d191f29855118305ba0cbd4b931fc"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="41a44802b1ef433bd10271f709f2d574"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Seems pretty good?</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 447px; left: 0px; top: 222px;" data-block-id="73aae37ce097649252f34ae59d9bd11d"><div class="sl-block-content" style="z-index: 12; font-size: 124%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move2</span>(</span>from1: <span class="hljs-type">Vect2</span>, from2: <span class="hljs-type">Vect2</span>, to: <span class="hljs-type">Vect2</span>)
+: <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">Movable</span>, <span class="hljs-type">Movable</span>)] = {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">find</span>(</span>pos: <span class="hljs-type">Vect2</span>) = objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">if</span> obj.position == pos =&gt; obj
+  }
+  <span class="hljs-function"><span class="hljs-keyword">val</span> (</span>obj1Opt, obj2Opt) = (find(from1), find(from2))
+
+  obj1Opt.toRight(s<span class="hljs-string">"Can't find movable @ $from1"</span>).right.flatMap { obj1 =&gt;
+  obj2Opt.toRight(s<span class="hljs-string">"Can't find movable @ $from2"</span>).right.flatMap { obj2 =&gt;
+    <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">ops1</span> =</span> toMovableOps(obj1)
+    <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">ops2</span> =</span> toMovableOps(obj2)
+    <span class="hljs-comment">// Runtime error here.</span>
+    <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">moved1</span> =</span> obj1 |&gt; ops2.moveTo(to)
+    <span class="hljs-comment">// And here - can you spot why?</span>
+    <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">moved2</span> =</span> obj2 |&gt; ops1.moveTo(to)
+    moved1.right.flatMap(m1 =&gt; moved2.right.map(m2 =&gt; (m1, m2)))
+  } }
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="33902ca883b082a9558354175a29c473" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 147px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>However it's a bit clunky and stupid errors can still happen.</p>
+</div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="43b2808e77db24f6833e8ac4a858adfa"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 313px; height: auto;" data-block-id="3f01478c77960c980c395d38f33199eb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Let's get rid of that.</h2>
+</div></div>
+</section></section><section data-previous-indexv="0" style="display: none;" aria-hidden="true" class="stack future" data-id="c4a2f365563c8639c90a65ca14525775" hidden=""><section style="display: none;" data-id="e9ef568d96d4e8998c1b8e4a3e8dbb9d"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 265px; height: auto;" data-block-id="48a02a15f2cad024241ce118ef990052"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>S#4: Extension Typeclasses?</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="ded4a363c30012815a83cad486a46e9a" style="height: auto; min-width: 30px; min-height: 30px; width: 800px; left: 80px; top: 385px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<h3>I am not really sure about the name</h3>
+</div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="84413f60cf320a7404472a8ac9bcf717"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>World Object trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 591px; left: 0px; top: 92px;" data-block-id="be264c5af97620f44c1f0c43da46e3f5"><div class="sl-block-content" style="z-index: 12; font-size: 136%;"><pre class="scala"><code class=" hljs "><span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Vect2</span>(</span>x: <span class="hljs-type">Int</span>, y: <span class="hljs-type">Int</span>)
+
+<span class="hljs-keyword">sealed</span> <span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">id</span>:</span> <span class="hljs-type">UUID</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">position</span>:</span> <span class="hljs-type">Vect2</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hp</span>:</span> <span class="hljs-type">Int</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-keyword">implicit</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">toOps</span>[</span><span class="hljs-type">A</span> &lt;: <span class="hljs-type">WObject</span>](obj: <span class="hljs-type">A</span>): <span class="hljs-type">WObjectOps</span>[<span class="hljs-type">A</span>] =
+    (((obj: <span class="hljs-type">WObject</span>) <span class="hljs-keyword">match</span> {
+      <span class="hljs-keyword">case</span> o: <span class="hljs-type">Rock</span> =&gt; <span class="hljs-type">RockOps</span>(o)
+      <span class="hljs-keyword">case</span> o: <span class="hljs-type">Scout</span> =&gt; <span class="hljs-type">ScoutOps</span>(o)
+      <span class="hljs-keyword">case</span> o: <span class="hljs-type">Gunship</span> =&gt; <span class="hljs-type">GunshipOps</span>(o)
+      <span class="hljs-keyword">case</span> o: <span class="hljs-type">LaserTower</span> =&gt; <span class="hljs-type">LaserTowerOps</span>(o)
+    }): <span class="hljs-type">WObjectOps</span>[_]).asInstanceOf[<span class="hljs-type">WObjectOps</span>[<span class="hljs-type">A</span>]]
+}
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">WObjectOps</span>[</span><span class="hljs-type">Self</span> &lt;: <span class="hljs-type">WObject</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">self</span>:</span> <span class="hljs-type">Self</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>): <span class="hljs-type">Self</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">takeDamage</span>(</span>damage: <span class="hljs-type">Int</span>): <span class="hljs-type">Self</span> = withHp((self.hp - damage) max <span class="hljs-number">0</span>)
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="490f012d26885bf07088f143aea0c4ff"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Movable trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 856px; height: 608px; left: 52px; top: 92px;" data-block-id="979223d212bbf585df46114673644581"><div class="sl-block-content" style="z-index: 12; font-size: 138%;"><pre class="scala"><code class=" hljs "><span class="hljs-keyword">sealed</span> <span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Movable</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moved</span>:</span> <span class="hljs-type">Boolean</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Movable</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">InitialMoved</span> =</span> <span class="hljs-literal">false</span>
+  <span class="hljs-keyword">implicit</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">toOps</span>[</span><span class="hljs-type">A</span> &lt;: <span class="hljs-type">Movable</span>](obj: <span class="hljs-type">A</span>): <span class="hljs-type">MovableOps</span>[<span class="hljs-type">A</span>] =
+    (((obj: <span class="hljs-type">Movable</span>) <span class="hljs-keyword">match</span> {
+      <span class="hljs-keyword">case</span> o: <span class="hljs-type">Scout</span> =&gt; <span class="hljs-type">ScoutOps</span>(o)
+      <span class="hljs-keyword">case</span> o: <span class="hljs-type">Gunship</span> =&gt; <span class="hljs-type">GunshipOps</span>(o)
+    }): <span class="hljs-type">MovableOps</span>[_]).asInstanceOf[<span class="hljs-type">MovableOps</span>[<span class="hljs-type">A</span>]]
+}
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">MovableOps</span>[</span><span class="hljs-type">Self</span> &lt;: <span class="hljs-type">Movable</span>] <span class="hljs-keyword">extends</span> <span class="hljs-type">WObjectOps</span>[<span class="hljs-type">Self</span>]  {
+  <span class="hljs-keyword">import</span> <span class="hljs-type">Movable</span>.toOps
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>position: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Self</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>): <span class="hljs-type">Self</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveTo</span>(</span>pos: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, <span class="hljs-type">Self</span>] =
+    <span class="hljs-keyword">if</span> (self.moved) <span class="hljs-type">Left</span>(<span class="hljs-string">"Already moved this turn!"</span>)
+    <span class="hljs-keyword">else</span> <span class="hljs-type">Right</span>(withMoved(<span class="hljs-literal">true</span>).withPosition(pos))
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="35c263410935bd4f8a3e1b14f3126248"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Fighter trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 815px; height: 612px; left: 73px; top: 88px;" data-block-id="1834d0071071544c8b2ba77fdc80ae00"><div class="sl-block-content" style="z-index: 12; font-size: 126%;"><pre class="scala"><code class=" hljs "><span class="hljs-keyword">sealed</span> <span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">Fighter</span> <span class="hljs-keyword"><span class="hljs-keyword">extends</span></span> <span class="hljs-title">WObject</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hasAttacked</span>:</span> <span class="hljs-type">Boolean</span>
+}
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">Fighter</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">InitialHasAttacked</span> =</span> <span class="hljs-literal">false</span>
+  <span class="hljs-keyword">implicit</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">toOps</span>[</span><span class="hljs-type">A</span> &lt;: <span class="hljs-type">Fighter</span>](obj: <span class="hljs-type">A</span>): <span class="hljs-type">FighterOps</span>[<span class="hljs-type">A</span>] =
+    (((obj: <span class="hljs-type">Fighter</span>) <span class="hljs-keyword">match</span> {
+      <span class="hljs-keyword">case</span> o: <span class="hljs-type">Gunship</span> =&gt; <span class="hljs-type">GunshipOps</span>(o)
+      <span class="hljs-keyword">case</span> o: <span class="hljs-type">LaserTower</span> =&gt; <span class="hljs-type">LaserTowerOps</span>(o)
+    }): <span class="hljs-type">FighterOps</span>[_]).asInstanceOf[<span class="hljs-type">FighterOps</span>[<span class="hljs-type">A</span>]]
+}
+
+<span class="hljs-class"><span class="hljs-keyword">trait</span> <span class="hljs-title">FighterOps</span>[</span><span class="hljs-type">Self</span> &lt;: <span class="hljs-type">Fighter</span>] <span class="hljs-keyword">extends</span> <span class="hljs-type">WObjectOps</span>[<span class="hljs-type">Self</span>] {
+  <span class="hljs-keyword">import</span> <span class="hljs-type">WObject</span>.toOps
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>hasAttacked: <span class="hljs-type">Boolean</span>): <span class="hljs-type">Self</span>
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">attack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span>](target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>)
+  : <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">Self</span>, <span class="hljs-type">Target</span>)] =
+    <span class="hljs-keyword">if</span> (self.hasAttacked)
+      <span class="hljs-type">Left</span>(<span class="hljs-string">"Already attacked this turn!"</span>)
+    <span class="hljs-keyword">else</span>
+      <span class="hljs-type">Right</span>((withHasAttacked(<span class="hljs-literal">true</span>), target.takeDamage(damage)))
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 0px; height: auto;" data-block-id="dbbdb7e0b75911ca4b50f25eb05b5407"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Defining objects</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 612px; left: 0px; top: 88px;" data-block-id="d8194df3cdbc4a4184af3cf291b80639"><div class="sl-block-content" style="z-index: 12; font-size: 124%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">uuid</span> =</span> <span class="hljs-type">UUID</span>.randomUUID()
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Rock</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">WObject</span>
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">RockOps</span>(</span>self: <span class="hljs-type">Rock</span>) <span class="hljs-keyword">extends</span> <span class="hljs-type">WObjectOps</span>[<span class="hljs-type">Rock</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = self.copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scout</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, 
+  moved: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Movable</span>.<span class="hljs-type">InitialMoved</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Movable</span>
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ScoutOps</span>(</span>self: <span class="hljs-type">Scout</span>) <span class="hljs-keyword">extends</span> <span class="hljs-type">MovableOps</span>[<span class="hljs-type">Scout</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>pos: <span class="hljs-type">Vect2</span>) = self.copy(position = pos)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>) = self.copy(moved = moved)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = self.copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Gunship</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, 
+  moved: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Movable</span>.<span class="hljs-type">InitialMoved</span>,
+  hasAttacked: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Fighter</span>.<span class="hljs-type">InitialHasAttacked</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GunshipOps</span>(</span>self: <span class="hljs-type">Gunship</span>)
+<span class="hljs-keyword">extends</span> <span class="hljs-type">MovableOps</span>[<span class="hljs-type">Gunship</span>] <span class="hljs-keyword">with</span> <span class="hljs-type">FighterOps</span>[<span class="hljs-type">Gunship</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withPosition</span>(</span>pos: <span class="hljs-type">Vect2</span>) = self.copy(position = pos)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withMoved</span>(</span>moved: <span class="hljs-type">Boolean</span>) = self.copy(moved = moved)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>v: <span class="hljs-type">Boolean</span>) = self.copy(hasAttacked = v)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = self.copy(hp = hp)
+}
+
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LaserTower</span>(</span>
+  position: <span class="hljs-type">Vect2</span>, hp: <span class="hljs-type">Int</span>, 
+  hasAttacked: <span class="hljs-type">Boolean</span>=<span class="hljs-type">Fighter</span>.<span class="hljs-type">InitialHasAttacked</span>, id: <span class="hljs-type">UUID</span>=uuid
+) <span class="hljs-keyword">extends</span> <span class="hljs-type">Fighter</span>
+<span class="hljs-keyword">case</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LaserTowerOps</span>(</span>self: <span class="hljs-type">LaserTower</span>) <span class="hljs-keyword">extends</span> <span class="hljs-type">FighterOps</span>[<span class="hljs-type">LaserTower</span>] {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHasAttacked</span>(</span>hasAttacked: <span class="hljs-type">Boolean</span>) =
+    self.copy(hasAttacked = hasAttacked)
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">withHp</span>(</span>hp: <span class="hljs-type">Int</span>) = self.copy(hp = hp)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">rock</span> =</span> <span class="hljs-type">Rock</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>), <span class="hljs-number">10</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">scout</span> =</span> <span class="hljs-type">Scout</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>), <span class="hljs-number">20</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">gunship</span> =</span> <span class="hljs-type">Gunship</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>), <span class="hljs-number">50</span>)
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">laserTower</span> =</span> <span class="hljs-type">LaserTower</span>(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">4</span>), <span class="hljs-number">200</span>)
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objects</span>:</span> <span class="hljs-type">Set</span>[<span class="hljs-type">WObject</span>] = <span class="hljs-type">Set</span>(rock, scout, gunship, laserTower)</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="3873782720ac14470f5851502eed925e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Operation that needs one trait</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 166px; left: 0px; top: 267px;" data-block-id="47f25ce90e5a80408bd7141e9c8cfb74"><div class="sl-block-content" style="z-index: 12; font-size: 127%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move</span>(</span>from: <span class="hljs-type">Vect2</span>, to: <span class="hljs-type">Vect2</span>): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, <span class="hljs-type">Movable</span>] = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">if</span> obj.position == from =&gt; obj
+  }
+  objOpt.toRight(s<span class="hljs-string">"Can't find movable @ $from"</span>).right.flatMap(_.moveTo(to))
+}</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="e55620b49d832a63fb8125269238b31f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Operation that needs two traits</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 381px; left: 0px; top: 160px;" data-block-id="49049fa034b1bdcc955e12c8937758c5"><div class="sl-block-content" style="z-index: 12; font-size: 145%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">moveAndAttack</span>[</span><span class="hljs-type">Target</span> &lt;: <span class="hljs-type">WObject</span>](
+  from: <span class="hljs-type">Vect2</span>, target: <span class="hljs-type">Target</span>, damage: <span class="hljs-type">Int</span>
+): <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span>, <span class="hljs-type">Target</span>)] = {
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">objOpt</span> =</span> objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">with</span> <span class="hljs-type">Fighter</span> <span class="hljs-keyword">if</span> obj.position == from =&gt; obj
+  }
+  objOpt.toRight(s<span class="hljs-string">"Can't find movable+fighter @ $from"</span>)
+    .right.flatMap(_.moveTo(target.position))
+    .right.flatMap(_.attack(target, damage))
+}
+
+<span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">target</span> =</span> objects.head
+moveAndAttack(<span class="hljs-type">Vect2</span>(<span class="hljs-number">1</span>, <span class="hljs-number">3</span>), target, <span class="hljs-number">10</span>)</code></pre></div></div></section><section style="display: none;" aria-hidden="true" class="future"><div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 33px; height: auto;" data-block-id="63b43d0da0b6ed23b8fde1385dceb26b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Our potentially troubling case</h2>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 960px; height: 400px; left: 0px; top: 160px;" data-block-id="668a06e909716add4cc4df3794707162"><div class="sl-block-content" style="z-index: 12; font-size: 130%;"><pre class="scala"><code class=" hljs "><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move2</span>(</span>from1: <span class="hljs-type">Vect2</span>, from2: <span class="hljs-type">Vect2</span>, to: <span class="hljs-type">Vect2</span>)
+: <span class="hljs-type">Either</span>[<span class="hljs-type">String</span>, (<span class="hljs-type">Movable</span>, <span class="hljs-type">Movable</span>)] = {
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">find</span>(</span>pos: <span class="hljs-type">Vect2</span>) = objects.collectFirst {
+    <span class="hljs-keyword">case</span> obj: <span class="hljs-type">Movable</span> <span class="hljs-keyword">if</span> obj.position == pos =&gt; obj
+  }
+  <span class="hljs-function"><span class="hljs-keyword">val</span> (</span>obj1Opt, obj2Opt) = (find(from1), find(from2))
+
+  obj1Opt.toRight(s<span class="hljs-string">"Can't find movable @ $from1"</span>).right.flatMap { obj1 =&gt;
+  obj2Opt.toRight(s<span class="hljs-string">"Can't find movable @ $from2"</span>).right.flatMap { obj2 =&gt;
+    <span class="hljs-keyword">for</span> {
+      m1 &lt;- obj1.moveTo(to).right
+      m2 &lt;- obj2.moveTo(to).right
+    } <span class="hljs-keyword">yield</span> (m1, m2)
+  } }
+}</code></pre></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="447be39177e6a6a3a14c757c8d33bf64" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 611px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>We can't mess it up no more!</p>
+</div></div></section><section style="display: none;" aria-hidden="true" class="future" data-id="12ff4677ccdf4b9eb897295382014f17"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 33px; height: auto;" data-block-id="f5ee16a8370da39c4319053ce603c3a2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>We did it!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 152px; height: auto;" data-block-id="e7d247aec61865d5662b67ae9a15570e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<h2 style="text-align:left">Pros</h2>
+
+<ul>
+	<li>Safe - won't fail at runtime with new class because of sealed pattern matching.</li>
+	<li>Easy - objects just have methods. Or at least it looks so.</li>
+	<li>Simple - no complicated errors.</li>
+</ul>
+
+<h2 style="text-align:left">Cons</h2>
+
+<ul>
+	<li>Each method invocation creates a wrapper object. But let's hope 
+really hard that JVM does escape analysis and puts that in stack ^_^</li>
+</ul>
+</div></div></section></section><section style="display: none;" class="future" aria-hidden="true" data-id="76d2c1b877fa38a32d084fc35b4d6dd2" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 22px; height: auto;" data-block-id="75c7f2981f7dc8a68f863539a8090bdf"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Thank you!</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 160px; top: 200px;" data-block-id="f22bc811400b8314d23c3cfe962647b2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h3><strong>Slides</strong></h3>
+
+<p><a href="https://slides.com/arturasslajus/deck" target="_blank">https://slides.com/arturasslajus/</a><a href="http://slides.com/arturasslajus/quest-for-composable-immutable-objects" target="_blank">quest-for-composable-immutable-objects</a></p>
+
+<p>&nbsp;</p>
+
+<h3><strong>Contacts</strong></h3>
+
+<p>Artūras Šlajus</p>
+
+<p style="color:rgb(255, 255, 255)">arturas@tinylabproductions.com</p>
+
+<p style="color:rgb(255, 255, 255)">@arturaz_</p>
+</div></div></section>
+				</div>
+			<div class="backgrounds"><div data-loaded="true" style="display: block;" class="slide-background present"></div><div data-loaded="true" style="display: block;" class="slide-background stack future"><div data-loaded="true" style="display: block;" class="slide-background past"></div><div data-loaded="true" style="display: block;" class="slide-background present"></div></div><div data-loaded="true" style="display: block;" class="slide-background stack future"><div data-loaded="true" style="display: none;" class="slide-background past"></div><div data-loaded="true" style="display: none;" class="slide-background past"></div><div data-loaded="true" style="display: none;" class="slide-background past"></div><div data-loaded="true" style="display: none;" class="slide-background past"></div><div data-loaded="true" style="display: block;" class="slide-background present"></div><div data-loaded="true" style="display: none;" class="slide-background future"></div><div data-loaded="true" style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div></div><div data-loaded="true" style="display: none;" class="slide-background stack future"><div data-loaded="true" style="display: none;" class="slide-background present"></div><div data-loaded="true" style="display: none;" class="slide-background future"></div></div><div data-loaded="true" style="display: none;" class="slide-background stack future"><div data-loaded="true" style="display: none;" class="slide-background present"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div></div><div style="display: none;" class="slide-background stack future"><div style="display: none;" class="slide-background present"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div></div><div style="display: none;" class="slide-background stack future"><div style="display: none;" class="slide-background present"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div></div><div style="display: none;" class="slide-background stack future"><div style="display: none;" class="slide-background present"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div></div><div style="display: none;" class="slide-background future"></div></div><div style="display: block;" class="progress"><span style="width: 0px;"></span></div><aside style="display: block;" class="controls"><div class="navigate-left"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="slide-number"></div><div class="pause-overlay"></div><div aria-atomic="true" aria-live="polite" id="aria-status-div" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+Quest for composable immutable objects
+
+(in Scala 2.11.5)
+
+
+Artūras Šlajus
+
+&nbsp;
+
+arturas@tinylabproductions.com
+
+@arturaz_
+
+</div></div>
+		</div>
+	</div>
+
+	
+
+	
+
+</div>
+
+
+
+      </div>
+      
+
+    </div> <!--! end of #container -->
+    <script>
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/f7sH7NavrjjvuGxByaw.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+UserVoice.push(['set', {
+  accent_color: '#448dd6',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)',
+  position: 'automatic'
+}]);
+
+</script>
+    
+<script>
+	var SLConfig = {"deck":{"id":351303,"slug":"quest-for-composable-immutable-objects","title":"Quest for composable immutable objects (in Scala)","description":"","visibility":"all","published_at":"2015-02-22T09:46:55.980Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/secure/fa75c3/decks.jpg","view_count":364,"user":{"id":107211,"username":"arturasslajus","name":"Artūras Šlajus","description":null,"thumbnail_url":"https://lh4.googleusercontent.com/--ZWShRmxf0w/AAAAAAAAAAI/AAAAAAAAAZU/Q--UGGeV8GI/photo.jpg","pro":false,"enterprise":false,"enterprise_manager":false,"registered":true},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"black-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"rtl":false,"version":2}};
+</script>
+    <script defer="defer" src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/application-6aa62300aa42f7f8c754bbb65721740e.js"></script>
+    	<script defer="defer" src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/reveal.js"></script>
+	
+
+
+  
+
+<script src="Quest%20for%20composable%20immutable%20objects%20%28in%20Scala%29%20by%20Art%C5%ABras%20%C5%A0lajus_files/highlight-7402c6534a9b758348350ef3a07c9a11.js" type="text/javascript"></script></body></html>

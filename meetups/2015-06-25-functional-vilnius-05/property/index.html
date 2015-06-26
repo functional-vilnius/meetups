@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Property Testing</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono' }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+layout: true
+class: center, middle
+---
+# Real World Property Testing
+
+Viačeslav Pozdniakov, Adform
+---
+layout: true
+class: left
+---
+# Before we start
+
+## I know:
+
+- Tests must be fast
+---
+# Before we start
+
+## I know:
+
+- Tests must be fast
+
+- My approach is not managerial
+---
+# Outsourcing
+
+## Managers are happy
+
+- Pay money and get result (as ordinary dev)
+---
+# Outsourcing
+
+## Managers are happy
+
+- Pay money and get result (as ordinary dev)
+
+- Fresh blood
+---
+# Outsourcing
+
+## Managers are happy
+
+- Pay money and get result (as ordinary dev)
+
+- Fresh blood
+
+- Heavy activity
+---
+# Outsourcing
+
+## Devs have open questions:
+
+- Support
+---
+# Outsourcing
+
+## Devs have open questions:
+
+- Support
+
+- Acceptance
+---
+# Outsourcing
+
+## Project requirements
+
+1. Extract a part of API to a separate project
+
+2. Switch storage (Cassandra to Aerospike)
+
+3. "Just change the url" replacement
+
+---
+# Outsourcing
+
+## Why this might be a problem?
+
+- Cassandra has a well defined query result ordering
+
+- Cassandra has compound keys
+
+- Cassandra has filtering (WHERE key_part = ...)
+
+---
+# Outsourcing
+
+## But all Aerospike has is:
+
+- Binary keys
+
+- Secondary index
+---
+# Tracking Point Api
+
+## Endpoints:
+
+- Add TP data for cookie_id
+
+- Delete by cookie_id
+
+- Delete by cookie_id and setup_id
+
+- Get by cookie_id
+
+- Get by cookie_id and setup_id
+---
+# Tracking Point Api
+
+## Writes
+
+```haskell
+data TrackingPoint = TrackingPoint {
+    _cookie_id :: CookieId
+  , _setup_id :: SetupId
+  , _point_id :: PointId
+} deriving (Show, Eq, Ord)
+```
+---
+# Tracking Point Api
+
+## Reads
+
+```haskell
+data CookieTrackingSetups = CookieTrackingSetups {
+    _cts_cookie_id :: CookieId
+  , _cts_visits :: [TrackingSetup]
+} deriving (Show, Eq, Ord)
+
+data TrackingSetup = TrackingSetup {
+    _ts_setup_id :: SetupId
+  , _ts_point_ids :: [VisitedTrackingPoint]
+} deriving (Show, Eq, Ord)
+
+data VisitedTrackingPoint = VisitedTrackingPoint {
+    _vtp_id :: PointId
+  , _vtp_date :: UTCTime
+} deriving (Show, Eq, Ord)
+```
+---
+# Quickcheck
+
+## What it actually does:
+
+- Generates _random_ (arbitrary) data
+
+- Checks corner cases well
+
+- Can automagically simplify failing cases
+---
+# Quickcheck
+
+## What it actually does:
+
+- Generates _random_ (arbitrary) data
+
+- Checks corner cases well
+
+- Can automagically simplify failing cases
+
+## Why it is useful:
+
+It can generate tests _data_ for us, so we can check if property holds:
+```haskell
+prop_revapp xs ys = reverse (xs++ys) == reverse xs ++ reverse ys
+```
+---
+# Quickcheck
+
+## Generate random TP data
+
+```haskell
+instance Arbitrary TrackingPoint where
+  arbitrary = TrackingPoint <$> arbitrary <*> arbitrary <*> arbitrary
+```
+
+## Remember request fields?
+
+```haskell
+data TrackingPoint = TrackingPoint {
+    _cookie_id :: CookieId
+  , _setup_id :: SetupId
+  , _point_id :: PointId
+} deriving (Show, Eq, Ord)
+```
+---
+# Quickcheck
+
+## Check reads and writes
+
+### Arbitrary writes
+
+```haskell
+TQC.testProperty "writes" $
+  \tp -> monadicIO $ do
+    s <- run $ postTrackingPoint url tp
+    assert $ s == 200
+```
+---
+# Quickcheck
+
+## Check reads and writes
+
+### Arbitrary writes
+
+```haskell
+TQC.testProperty "writes" $
+  \tp -> monadicIO $ do
+    s <- run $ postTrackingPoint url tp
+    assert $ s == 200
+```
+
+Not so useful, uh?
+
+---
+# Quickcheck
+
+## Check reads and writes
+
+### Arbitrary reads
+
+```haskell
+TQC.testProperty "reads by cookie" $
+  \tp -> monadicIO $ do
+    let c = TP._cookie_id tp
+    response <- run $ getTrackingPoint url c
+    assert $ TP._cts_cookie_id response == c
+```
+
+### Remember response fields?
+
+```haskell
+data CookieTrackingSetups = CookieTrackingSetups {
+    _cts_cookie_id :: CookieId
+  , _cts_visits :: [TrackingSetup]
+} deriving (Show, Eq, Ord)
+```
+---
+# Quickcheck
+
+## Test scenarios
+
+These gets and posts are primitives for more complicated scenarios, i.e.
+
+1. Delete all data for cookie_id
+
+2. Write data for cookie_id
+
+3. Get and check data
+
+Or:
+
+1. Delete all data for cookie_id
+
+2. Write data for cookie_id
+
+3. Delete data for cookie_id and setup_id
+
+4. Get and check data
+
+---
+# Quickcheck
+
+## Storage mutation
+
+```haskell
+data TrackingPointMutation =
+    Post TrackingPoint
+  | DeleteAll CookieId
+  | Delete CookieId SetupId
+  deriving (Show, Eq, Ord)
+```
+
+## Arbitrary mutation chain
+
+```haskell
+instance Arbitrary TrackingPointMutation where
+  arbitrary = oneof [post, delAll, del]
+    where
+      tp = arbitrary
+      post = Post <$> tp
+      delAll = DeleteAll <$> fmap _cookie_id tp
+      del = Delete <$> (fmap _cookie_id tp) <*> (fmap _setup_id tp)
+```
+---
+# Quickcheck
+
+## Unified test
+
+```haskell
+TQC.testProperty "Random mutation chain" $
+  \allActions -> monadicIO $ do
+    let actions = take 5 allActions
+    run $ mapM_ (deleteTrackingPointForCookie url) $ map key actions
+    let f (TP.DeleteAll c) = deleteTrackingPointForCookie url c
+        f (TP.Delete c s) = deleteTrackingPoint url c s
+        f (TP.Post tp) = postTrackingPoint url tp
+    run $ mapM_ f actions
+    let replayed = replayTrackingPoint actions
+    afters <- mapM (\c -> run $ getTrackingPoint url c) $ map key replayed
+    assert $ replayed == afters
+```
+
+## Reference implementation of api
+
+```haskell
+replayTrackingPoint :: [TrackingPointMutation] -> [CookieTrackingSetups]
+```
+---
+background-image: url(n7k2e.jpg)
+---
+# Quickcheck
+
+## Generated data
+
+```haskell
+[]
+[DeleteAll (CookieId 0),
+  DeleteAll (CookieId 2)]
+[DeleteAll (CookieId 1)]
+[]
+[DeleteAll (CookieId 0),
+  DeleteAll (CookieId 2),
+  Post (TrackingPoint {_cookie_id = CookieId 2,
+    _setup_id = SetupId 1, _point_id = PointId 4})]
+[Post (TrackingPoint {_cookie_id = CookieId (-4),
+    _setup_id = SetupId (-3), _point_id = PointId (-2)}),
+  Post (TrackingPoint {_cookie_id = CookieId (-5),
+    _setup_id = SetupId 4, _point_id = PointId 0}),
+  Delete (CookieId 5) (SetupId (-4)),
+  DeleteAll (CookieId 2),
+  DeleteAll (CookieId (-7))]
+```
+---
+# Quickcheck
+
+## How can we fix it
+
+- Make cookie_id constant in some cases
+
+- Use fixed range values for cookie_id and setup_id
+
+- We want testing to be not random but exhaustive
+---
+# Smallcheck
+
+## Checks quantifiers:
+
+- for all
+
+- exists
+
+- exists unique
+---
+# Smallcheck
+
+## Checks quantifiers:
+
+- for all
+
+- exists
+
+- exists unique
+
+## Depth
+
+Default value is 5
+---
+# Smallcheck
+
+## Generator
+
+```haskell
+instance Monad m => Serial m TrackingPoint where
+  series = TrackingPoint <$> series <~> series <~> series
+```
+## Mutation chain element
+
+```haskell
+instance Monad m => Serial m TrackingPointMutation where
+  series = cons1 Post \/ cons1 DeleteAll \/ cons2 Delete
+```
+---
+# Smallcheck
+
+## Generated data
+
+```haskell
+[]
+[Post (TrackingPoint {_cookie_id = CookieId 0,
+    _setup_id = SetupId 0, _point_id = PointId 0})]
+[DeleteAll (CookieId 0)]
+[Post (TrackingPoint {_cookie_id = CookieId 0,
+    _setup_id = SetupId 0, _point_id = PointId 0}),
+  Post (TrackingPoint {_cookie_id = CookieId 0,
+    _setup_id = SetupId 0, _point_id = PointId 0})]
+[Post (TrackingPoint {_cookie_id = CookieId 1,
+    _setup_id = SetupId 0, _point_id = PointId 0})]
+[Post (TrackingPoint {_cookie_id = CookieId 0,
+    _setup_id = SetupId 0, _point_id = PointId 0}),
+  DeleteAll (CookieId 0)]
+[DeleteAll (CookieId 0),
+  Post (TrackingPoint {_cookie_id = CookieId 0,
+    _setup_id = SetupId 0, _point_id = PointId 0})]
+[Post (TrackingPoint {_cookie_id = CookieId 0,
+    _setup_id = SetupId 0, _point_id = PointId 0}),
+  Delete (CookieId 0) (SetupId 0)]
+```
+---
+# Smallcheck
+
+## Depth 0 Integer
+
+```haskell
+0
+```
+
+## Depth 1 Integer
+
+```haskell
+0, 1, -1
+```
+
+## Depth 5 Integer
+
+```haskell
+0, 1, -1, 2, -2, 3, -3, 4, -4, 5, -5
+```
+---
+# Smallcheck
+
+## Depth 1 [Integer]
+
+```haskell
+[]
+```
+
+## Depth 2 [Integer]
+
+```haskell
+[], [0], [1], [-1]
+```
+
+## Depth 3 [Integer]
+
+```haskell
+[], [0], [1], [0,0], [-1], [0,1], [1,0], [0,-1], [2],
+  [1,1], [-1,0], [1,-1], [-2], [-1,1], [2,0], [-1,-1],
+  [-2,0], [2,1], [-2,1], [2,-1], [-2,-1]
+```
+---
+# Smallcheck
+
+## Depth 3 [Integer]
+
+```haskell
+[], [0], [1], [0,0], [-1], [0,1], [1,0], [0,-1], [2],
+  [1,1], [-1,0], [1,-1], [-2], [-1,1], [2,0], [-1,-1],
+  [-2,0], [2,1], [-2,1], [2,-1], [-2,-1]
+```
+
+## Depth 2 Integer
+
+```haskell
+0, 1, -1, 2, -2
+```
+
+## Depth 1 Integer
+
+```haskell
+0, 1, -1
+```
+---
+# Test suite
+
+## Tools
+
+- tasty
+
+- quickcheck
+
+- smallcheck
+
+## Executable
+
+Statically linked: run on any 64bit Linux machine.
+
+---
+# Test suite
+
+## Command and Output
+
+```
+➜ URL=http://api.host:8888 ./adserving-storage-e2e --smallcheck-depth 4
+```
+
+```
+Adserving Storage API: http://api.host:8888
+  Tracking Point API random
+    reads by cookie:           OK (2.69s)
+      +++ OK, passed 100 tests.
+    reads by cookie and setup: OK (1.74s)
+      +++ OK, passed 100 tests.
+    writes:                    OK (2.07s)
+      +++ OK, passed 100 tests.
+    deletes by setup_id:       OK (1.69s)
+      +++ OK, passed 100 tests.
+    deletes by cookie_id:      OK (1.90s)
+      +++ OK, passed 100 tests.
+  Tracking Point API exhaustive
+    mutation chain:            OK (24.72s)
+      331 tests completed
+
+All 6 tests passed (34.82s)
+```
+
+---
+# Takeaways
+
+## There are two approaches to property testing:
+
+- QuickCheck: if it fails, it fails on a random set of data
+
+- Smallcheck: if it fails, if fails on a very small set of data
+---
+# Takeaways
+
+## There are two approaches to property testing:
+
+- QuickCheck: if it fails, it fails on a random set of data
+
+- Smallcheck: if it fails, if fails on a very small set of data
+
+## You can act like _golang_ people
+
+OMG, we get an executable without dependencies!
+
+---
+# Takeaways
+
+## There are two approaches to property testing:
+
+- QuickCheck: if it fails, it fails on a random set of data
+
+- Smallcheck: if it fails, if fails on a very small set of data
+
+## You can act like _golang_ people
+
+OMG, we get an executable without dependencies!
+
+## Such tools exists for almost all PL
+
+i.e. ScalaCheck + smallcheck4scala for Scala
+
+---
+layout: true
+class: center, middle
+
+# Thank you!
+
+[@poznia](https://twitter.com/poznia)
+
+---
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "purescript-lens-examples",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "dependencies": {
+    "purescript-optic": "~0.8.0"
+  }
+}
